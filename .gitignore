@@ -1,8 +1,10 @@
 #### joe made this: http://goel.io/joe
 
-#####=== Python ===#####
-
 config/
+reports/
+node_modules/
+
+#####=== Python ===#####
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
