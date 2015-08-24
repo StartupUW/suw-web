@@ -1,0 +1,5 @@
+psycopg2
+coverage
+Django==1.8
+mock
+mock-django
