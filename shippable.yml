@@ -6,6 +6,9 @@ python:
 install:
   - pip install -r requirements.txt
 
+env:
+  - DJANGO_SETTINGS_MODULE=web.shippable_settings
+
 before_script: 
   - psql -c 'create database test;' -U postgres
   - mkdir -p shippable/testresults
