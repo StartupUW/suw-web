@@ -6,6 +6,9 @@ python:
 install:
   - pip install -r requirements.txt
 
+addons:
+     postgresql : "9.3"
+
 env:
   - DJANGO_SETTINGS_MODULE=web.shippable_settings
 
