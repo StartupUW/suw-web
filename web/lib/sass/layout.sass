@@ -3,62 +3,56 @@
 $header-margin: 40px
 $header-height: 60px
 
-body
+html, body
   margin: 0
   padding: 0
   font-family: $primary-font
   font-weight: 300
 
-#header
-  font-size: $primary-font-size
-  width: 100%
-  height: $header-height
-  color: white
-  letter-spacing: .3em
-
-  #logo
-    display: inline-block
-    left: $header-margin
-    position: absolute
-    margin-top: 10px
-
-  #links
-    display: inline-block
-    right: $header-margin
-    position: absolute
-    font-size: .7em
-    margin-top: 25px
-
-    a
-      color: white
-      li
-        display: inline
-        margin: 15px
-
-      &:hover, &:visited, &:link, &:active
-        text-decoration: none
-
 #splash
   width: 100%
   height: 600px
-  margin-top: -$header-height
-  background-image: url()
   font-family: $title-font
   color: $title-color
+  text-align: center
+  background-size: cover
+  background-image: url('/img/default.jpeg')
 
-  #splash-img
-    height: 100%
-    width: 100%
+  #header
+    font-size: $primary-font-size
+    height: $header-height
+    color: white
+    letter-spacing: .3em
+
+    #logo
+      display: inline-block
+      left: $header-margin
+      position: absolute
+      margin-top: 10px
+
+    #links
+      display: inline-block
+      right: $header-margin
+      position: absolute
+      font-size: .8em
+      margin-top: 25px
+
+      a
+        color: white
+        opacity: .8
+
+        li
+          display: inline
+          margin: 15px
+
+        &:hover, &:visited, &:link, &:active
+          text-decoration: none
+
+        &:hover
+          opacity: 1
 
   #splash-title
-    text-align: center
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    height: 450px
-    margin: auto
+    margin-top: 130px
 
     .title
       letter-spacing: .3em
@@ -72,7 +66,7 @@ body
     font-size: $primary-font-size
     width: 100%
     height: 50px
-    padding: 15px 0
+    padding-top: 15px
     background-color: #30393e
     text-align: center
 
@@ -84,6 +78,3 @@ body
       li
         display: inline
         margin: 15px
-
-      &:visited, &:link, &:active
-        text-decoration: none
