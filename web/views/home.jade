@@ -1,10 +1,13 @@
 extends layout
 
+block css
+    link(rel='stylesheet', href='/css/home.css')
+
 block splash
   h1= title.toUpperCase()
 
   .subtitle
-    p welcome to #{title.toLowerCase()}
+    p Start something today.
 
 
 block content
@@ -12,5 +15,10 @@ block content
   section
     h1 Mission
 
+    p Lorem ipsum dolor sit amet, qui lucilius euripidis persecuti an, iudico delectus ullamcorper ut pro. Mea et soluta timeam, no pro utamur fabellas consectetuer.
+
   section
     h1 Events
+
+  section
+    h1 Launch

@@ -6,25 +6,27 @@ $header-height: 60px
 body
   margin: 0
   padding: 0
+  font-family: $primary-font
+  font-weight: 300
 
 #header
   font-size: $primary-font-size
   width: 100%
   height: $header-height
-  border-bottom: 1px solid #aaa
   color: white
+  letter-spacing: .3em
 
   #logo
     display: inline-block
     left: $header-margin
     position: absolute
+    margin-top: 10px
 
   #links
     display: inline-block
     right: $header-margin
     position: absolute
     font-size: .7em
-    letter-spacing: .3em
     margin-top: 25px
 
     a
@@ -62,9 +64,19 @@ body
 #footer
     font-size: $primary-font-size
     width: 100%
-    height: 60px
-    border-top: 1px solid #aaa
-
-section
-  h1
+    height: 50px
+    padding: 15px
+    background-color: #30393e
     text-align: center
+
+    a
+      color: white
+      font-size: 1.5em
+      margin: 0 10px
+
+      li
+        display: inline
+        margin: 15px
+
+      &:visited, &:link, &:active
+        text-decoration: none
