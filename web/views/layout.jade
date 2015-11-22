@@ -24,7 +24,10 @@ html
           li CONTACT
 
     #splash
-      .title
+      - var defaultImage = 'https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?fit=crop&fm=jpg&h=800&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1450';
+      img#splash-img(src="#{splashImage != null ? splashImage : defaultImage }")
+
+      #splash-title
         block splash
 
     #content

@@ -34,22 +34,27 @@ body {
   width: 100%;
   height: 600px;
   margin-top: -60px;
-  background-image: url(https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?fit=crop&fm=jpg&h=800&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1450);
+  background-image: url(url();
   font-family: "Helvetica Neue", sans-serif;
   color: white; }
-  #splash .title {
+  #splash #splash-img {
+    height: 100%;
+    width: 100%; }
+  #splash #splash-title {
     text-align: center;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 400px;
-    margin: auto;
-    font-size: 2em;
-    letter-spacing: .3em; }
-    #splash .title .subtitle {
-      font-size: 1em; }
+    height: 450px;
+    margin: auto; }
+    #splash #splash-title .title {
+      letter-spacing: .3em;
+      font-size: 3em; }
+    #splash #splash-title .subtitle {
+      letter-spacing: .15em;
+      font-size: 1.5em; }
 
 #footer {
   font-size: 1em;
