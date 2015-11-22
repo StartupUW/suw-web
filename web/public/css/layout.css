@@ -1,23 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
 
 #header {
   font-size: 1em;
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid #aaa;
-  color: white; }
+  color: white;
+  letter-spacing: .3em; }
   #header #logo {
     display: inline-block;
     left: 40px;
-    position: absolute; }
+    position: absolute;
+    margin-top: 10px; }
   #header #links {
     display: inline-block;
     right: 40px;
     position: absolute;
     font-size: .7em;
-    letter-spacing: .3em;
     margin-top: 25px; }
     #header #links a {
       color: white; }
@@ -51,8 +54,16 @@ body {
 #footer {
   font-size: 1em;
   width: 100%;
-  height: 60px;
-  border-top: 1px solid #aaa; }
-
-section h1 {
+  height: 50px;
+  padding: 15px;
+  background-color: #30393e;
   text-align: center; }
+  #footer a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px; }
+    #footer a li {
+      display: inline;
+      margin: 15px; }
+    #footer a:visited, #footer a:link, #footer a:active {
+      text-decoration: none; }

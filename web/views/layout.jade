@@ -2,8 +2,8 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/css/layout.css')
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous")
+    link(rel="stylesheet" href="/css/layout.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 
     block css
     block scripts
@@ -31,4 +31,9 @@ html
       block content
 
     #footer
-      p Contact
+      #social
+        a(href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+        a(href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+        a(href="https://instagram.com/startupuw/"): i.fa.fa-instagram
+        a(href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+        a(href="http://launch.startupuw.com"): i.fa.fa-rocket
