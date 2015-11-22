@@ -6,5 +6,28 @@ html
 
     block css
     block scripts
+
   body
-    block content
+    #header
+      #logo
+        p STARTUP UW
+
+      ul#links
+        a(href="/")
+          li HOME
+        a(href="/about")
+          li ABOUT
+        a(href="/team")
+          li TEAM
+        a(href="#footer")
+          li CONTACT
+
+    #splash
+      .title
+        block splash
+
+    #content
+      block content
+
+    #footer
+      p Contact

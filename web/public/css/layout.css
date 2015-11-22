@@ -1,5 +1,58 @@
+body {
+  margin: 0;
+  padding: 0; }
+
 #header {
-  font-size: 1em; }
+  font-size: 1em;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #aaa;
+  color: white; }
+  #header #logo {
+    display: inline-block;
+    left: 40px;
+    position: absolute; }
+  #header #links {
+    display: inline-block;
+    right: 40px;
+    position: absolute;
+    font-size: .7em;
+    letter-spacing: .3em;
+    margin-top: 25px; }
+    #header #links a {
+      color: white; }
+      #header #links a li {
+        display: inline;
+        margin: 15px; }
+      #header #links a:hover, #header #links a:visited, #header #links a:link, #header #links a:active {
+        text-decoration: none; }
+
+#splash {
+  width: 100%;
+  height: 600px;
+  margin-top: -60px;
+  background-image: url(https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?fit=crop&fm=jpg&h=800&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1450);
+  font-family: "Helvetica Neue", sans-serif;
+  color: white; }
+  #splash .title {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    margin: auto;
+    font-size: 2em;
+    letter-spacing: .3em; }
+    #splash .title .subtitle {
+      font-size: 1em; }
 
 #footer {
-  font-size: 1em; }
+  font-size: 1em;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #aaa; }
+
+section h1 {
+  text-align: center; }

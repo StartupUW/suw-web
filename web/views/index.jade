@@ -1,5 +1,14 @@
 extends layout
 
+block splash
+  h1= title.toUpperCase()
+
+  .subtitle
+    p welcome to #{title.toLowerCase()}
+
+
 block content
-  h1= title
-  p Welcome to #{title}
+  section
+    h1 Mission
+  section
+    h1 Events
