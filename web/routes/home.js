@@ -1,5 +1,5 @@
 // Home Page
 
 module.exports = function(req, res, next) {
-    res.render('index', { title: 'Home' });
+    res.render('home', { title: 'Startup UW' });
 };

@@ -1,12 +1,16 @@
 extends layout
 
-block content
-	- var hello = true
-	h1= title
-	p Welcome to #{title}
-
 block splash
   h1= title.toUpperCase()
 
   .subtitle
     p welcome to #{title.toLowerCase()}
+
+
+block content
+
+  section
+    h1 Mission
+
+  section
+    h1 Events
