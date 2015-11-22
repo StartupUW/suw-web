@@ -12,19 +12,15 @@ Important links:
 
 ### Architecture
 
-Web framework: Django Python 1.8
+Web framework: Express JS
 
 Data store: PostgreSQL 9.4
 
-CI Tools: Git, Github, Jenkins
+CI Tools: Git, Github, Shippable
 
 System specifications: AWS t2.micro, Ubuntu 14.04 Linux
 
-Testing Tools: Pylint, unittest, django_jenkins
-
 Subdomains (TBD):
-
- - build.startupuw.com // CI builds
 
  - dev.startupuw.com // test environment
 
