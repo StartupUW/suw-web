@@ -27,8 +27,9 @@ events = Table('events', metadata,
 	Column('place', String, nullable=False),
 	Column('lat', Numeric, nullable=True),
 	Column('lng', Numeric, nullable=True),
-	Column('start', DateTime, nullable=False),
-	Column('end', DateTime, nullable=True)
+	Column('start_time', DateTime, nullable=False),
+	Column('end_time', DateTime, nullable=True),
+	Column('timestamp', TIMESTAMP(timezone=True), default=func.now())
 )
 metadata.create_all(engine)
 
@@ -38,10 +39,10 @@ for event in data:
 		'name' : event['name'],
 		'desc' : event['description'],
 		'place' : event['place']['name'],
-		'start' : event['start_time'],
+		'start_time' : event['start_time'],
 	}
 	if('end_time' in event):
-		events_data['end'] = event['end_time']	
+		events_data['end_time'] = event['end_time']	
 	if('location' in event['place']):
 		events_data['lat'] = event['place']['location']['latitude']
 		events_data['lng'] = event['place']['location']['longitude']
