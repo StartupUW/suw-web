@@ -54,6 +54,9 @@ section {
   max-width: 950px;
   margin: auto;
   min-height: 200px; }
+  section p {
+    max-width: 700px;
+    margin: 25px auto; }
 
 #footer {
   font-size: 1em;

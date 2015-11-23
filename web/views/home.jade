@@ -13,21 +13,42 @@ block splash
 block content
 
   section
-    h1 We're a student community driven by startup culture
+    h1 A student community driven by startup culture
 
-    p Startup UW is the University of Washington's largest student organization dedicated to entrepreneurship across all industries.
+    p Startup UW is the University of Washington's largest student organization dedicated to entrepreneurship across all industries and disciplines.
 
   section
-    h1 Our mission is to inspire others and lead change
+    h1 A mission to inspire others and lead change
 
-    p Lorem ipsum dolor sit amet, qui lucilius euripidis persecuti an, iudico delectus ullamcorper ut pro. Mea et soluta timeam, no pro utamur fabellas consectetuer.
+    p We believe innovation in the Pacific Northwest starts here. Our goal is to equip students with the resources, connections, and skills they need to kickstart their next impactful enterprise.
 
-    img(src="/img/home-1.jpg" width="100%")
+    p We believe we can help make Seattle and the UW an even better place for startups to thrive.
+
+    p: img(src="/img/home-1.jpg" width="100%")
 
   section
     h1 Attend our upcoming events
 
+    p It's no secret we hold some killer events. We've held events featuring startup luminaries like Alexis Ohanian and Rand Fishkin. We hold dinners with founders. We have pitch nights, workshops, and more. Check out what we have in store for you!
+
+    if events
+      #upcoming-events.events
+        h2 Upcoming
+        each event in events
+          .event
+            p= event.name
+            p #{event.start} - #{event.end}
+            p= event.description
+
+      #past-events.events
+        h2 Past
+        each event in events
+          .event
+            p= event.name
+            p #{event.start} - #{event.end}
+            p= event.description
+
   section
     h1 Showcase your projects with Launch
 
-    img(src="/img/launch.png" width="100%")
+    p: img(src="/img/launch.png" width="100%")
