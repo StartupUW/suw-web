@@ -3,42 +3,44 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #333; }
 
 #splash {
   width: 100%;
   height: 600px;
   font-family: "Helvetica Neue", sans-serif;
-  color: white;
+  color: #333;
   text-align: center;
-  background-size: cover;
-  background-image: url("/img/default.jpeg"); }
+  background-size: cover; }
   #splash #header {
     font-size: 1em;
     height: 60px;
-    color: white;
     letter-spacing: .3em; }
     #splash #header #logo {
       display: inline-block;
-      left: 40px;
+      left: 30px;
       position: absolute;
       margin-top: 10px; }
+      #splash #header #logo p {
+        display: inline-block;
+        margin-left: 15px; }
+      #splash #header #logo img {
+        vertical-align: middle;
+        height: 45px;
+        display: inline; }
     #splash #header #links {
       display: inline-block;
       right: 40px;
       position: absolute;
       font-size: .8em;
       margin-top: 25px; }
-      #splash #header #links a {
-        color: white;
-        opacity: .8; }
-        #splash #header #links a li {
-          display: inline;
-          margin: 15px; }
-        #splash #header #links a:hover, #splash #header #links a:visited, #splash #header #links a:link, #splash #header #links a:active {
-          text-decoration: none; }
-        #splash #header #links a:hover {
-          opacity: 1; }
+      #splash #header #links a li {
+        display: inline;
+        margin: 15px; }
+      #splash #header #links a:hover, #splash #header #links a:visited, #splash #header #links a:link, #splash #header #links a:active {
+        text-decoration: none;
+        color: #333; }
   #splash #splash-title {
     margin-top: 130px; }
     #splash #splash-title .title {
@@ -47,6 +49,10 @@ html, body {
     #splash #splash-title .subtitle {
       letter-spacing: .15em;
       font-size: 1.5em; }
+
+section {
+  max-width: 950px;
+  margin: auto; }
 
 #footer {
   font-size: 1em;
