@@ -58,6 +58,23 @@ section {
     max-width: 700px;
     margin: 25px auto; }
 
+.button {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #aaa;
+  text-decoration: none;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 3px;
+  display: inline-block;
+  min-width: 30px; }
+  .button.large {
+    font-size: 1.2em;
+    padding: 10px 20px; }
+  .button.small {
+    font-size: 0.75em;
+    padding: 5px 10px; }
+
 #footer {
   font-size: 1em;
   width: 100%;

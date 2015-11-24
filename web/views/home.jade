@@ -10,12 +10,24 @@ block splash
   .subtitle
     p build skills &bull; meet people &bull; make things
 
+mixin event(event)
+  .event
+    p.name= event.name
+    .at
+      i.fa.fa-clock-o
+      span #{event.at} #{event.date}
+    .location
+      i.fa.fa-map-marker
+      span= event.location
+
 block content
 
   section
     h1 A student community driven by startup culture
 
     p Startup UW is the University of Washington's largest student organization dedicated to entrepreneurship across all industries and disciplines.
+
+    // button Play Video
 
   section
     h1 A mission to inspire others and lead change
@@ -35,20 +47,22 @@ block content
       #upcoming-events.events
         h2 Upcoming
         each event in events
-          .event
-            p= event.name
-            p #{event.start} - #{event.end}
-            p= event.description
+          +event(event)
 
       #past-events.events
         h2 Past
         each event in events
-          .event
-            p= event.name
-            p #{event.start} - #{event.end}
-            p= event.description
+          +event(event)
+
+    p: a.button.large(href="/events") View All Events
 
   section
     h1 Showcase your projects with Launch
 
+    p Working on something cool? Looking to get feedback or hire new people? Try out the Launch beta and show the UW community your hard work.
+
     p: img(src="/img/launch.png" width="100%")
+
+  section
+    h1 Keep up to date with Startup UW
+    a.button.large Subscribe To Our Newsletter

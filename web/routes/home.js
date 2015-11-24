@@ -2,19 +2,22 @@
 
 var mockEvents = [
   {
-    name: 'Event 1',
-    start: 'Jan 1, 1970',
-    end: 'Jan 2, 1970',
-    description: 'This is an event description!'
+    name: 'Winter Info Night',
+    at: '5:00pm - 7:00pm',
+    date: 'Jan 07, 2015',
+    location: 'Startup Hall'
   },
   {
-    name: 'Event 1',
-    start: 'Jan 1, 1970',
-    end: 'Jan 2, 1970',
-    description: 'This is an event description!'
+    name: 'Speed Networking',
+    at: '5:00pm - 7:00pm',
+    date: 'Nov 21, 2015',
+    location: 'Startup Hall'
   }
 ];
 
 module.exports = function(req, res, next) {
-    res.render('home', { title: 'Startup UW', events: mockEvents });
+  res.render('home', {
+    title: 'Startup UW',
+    events: mockEvents
+  });
 };

@@ -9,3 +9,14 @@ section {
 .events {
   width: 50%;
   display: inline-block; }
+  .events .event {
+    border-left: 7px solid #33ccff;
+    padding: 5px;
+    margin-bottom: 35px; }
+    .events .event .location, .events .event .at, .events .event .name {
+      margin-bottom: 10px; }
+    .events .event .name {
+      margin-top: 0;
+      font-weight: 600; }
+    .events .event .fa {
+      margin-right: 7px; }
