@@ -10,15 +10,15 @@ CLIENT_SECRET = 'cf8d4abe8b14cdc7d03f1a23f9abcbe6'
 r = requests.get('https://graph.facebook.com/oauth/access_token?client_id=' + CLIENT_ID + '&client_secret=' + CLIENT_SECRET + '&grant_type=client_credentials')
 token = r.text.split('=')[1]
 
+# Get the data from the facebook api
 r = requests.get('https://graph.facebook.com/StartupUW/events?access_token=' + token)
 data = r.json()['data']
 
-for event in data:
-	print event['name']
-
+# Start a connection
 engine = create_engine('postgresql+psycopg2://postgres:asdfasdf@localhost/suw')
 conn = engine.connect()
 
+# The Database Schema
 metadata  = MetaData()
 events = Table('events', metadata,
 	Column('id', BigInteger, primary_key=True),
@@ -33,6 +33,7 @@ events = Table('events', metadata,
 )
 metadata.create_all(engine)
 
+# Get every event and add it to the database
 for event in data:
 	events_data = {
 		'id' : event['id'],
