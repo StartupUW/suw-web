@@ -24,6 +24,11 @@ Subdomains (TBD):
 
  - dev.startupuw.com // test environment
 
+### TODO
+
+- Setup dev environment and routing
+- Migrate static content to S3
+
 ### Philosophy
 
 This website is not only about StartupUW, but about showing our ability to abide by high technical standards of development. When we do things the right way, we'll be more productive, develop faster, and make startupuw.com an example of strong engineering.
