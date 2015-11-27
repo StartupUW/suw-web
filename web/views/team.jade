@@ -1,12 +1,11 @@
 extends layout
 
-block content
-	- var hello = true
-	h1= title
-	p Welcome to #{title}
+block css
+    link(rel='stylesheet', href='/css/team.css')
 
 block splash
-  h1= title.toUpperCase()
+  .title
+    h1= title.toUpperCase()
 
   .subtitle
     p welcome to #{title.toLowerCase()}

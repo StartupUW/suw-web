@@ -1,0 +1,112 @@
+@import _variables
+
+$header-margin: 40px
+$header-height: 60px
+
+html, body
+  margin: 0
+  padding: 0
+  font-family: $primary-font
+  font-weight: 300
+  color: $primary-color
+
+#splash
+  width: 100%
+  height: 600px
+  font-family: $title-font
+  color: $title-color
+  text-align: center
+  background-size: cover
+
+  #header
+    font-size: $primary-font-size
+    height: $header-height
+    letter-spacing: .3em
+
+    #logo
+      display: inline-block
+      left: $header-margin - 10
+      position: absolute
+      margin-top: 10px
+
+      p
+        display: inline-block
+        margin-left: 15px
+
+      img
+        vertical-align: middle
+        height: 45px
+        display: inline
+
+    #links
+      display: inline-block
+      right: $header-margin
+      position: absolute
+      font-size: .8em
+      margin-top: 25px
+
+      a
+        li
+          display: inline
+          margin: 15px
+
+        &:hover, &:visited, &:link, &:active
+          text-decoration: none
+          color: $primary-color
+
+  #splash-title
+    margin-top: 130px
+
+    .title
+      letter-spacing: .3em
+      font-size: $title-font-size
+
+    .subtitle
+      letter-spacing: .15em
+      font-size: $subtitle-font-size
+
+section
+  max-width: 950px
+  margin: auto
+  min-height: 200px
+
+  p
+    max-width: 700px
+    margin: 25px auto
+
+.button
+  cursor: pointer
+  font-family: $primary-font
+  border: 1px solid #aaa
+  text-decoration: none
+  background-color: white
+  margin: 0 10px
+  border-radius: 3px
+  display: inline-block
+  min-width: 30px
+
+  &.large
+    font-size: $button-large-font-size
+    padding: 10px 20px
+
+  &.small
+    font-size: $button-small-font-size
+    padding: 5px 10px
+
+
+#footer
+    font-size: $primary-font-size
+    width: 100%
+    height: 50px
+    padding-top: 15px
+    background-color: #30393e
+    text-align: center
+
+    a
+      color: white
+      font-size: 1.5em
+      margin: 0 10px
+
+      li
+        display: inline
+        margin: 15px
