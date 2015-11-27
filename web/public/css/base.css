@@ -92,7 +92,8 @@ section {
   border-radius: 3px;
   display: inline-block;
   min-width: 30px;
-  font-weight: 600; }
+  font-weight: 600d;
+  color: rgba(0, 0, 0, 0.8); }
   .button:active, .button:visited {
     color: rgba(0, 0, 0, 0.8); }
   .button:hover {
