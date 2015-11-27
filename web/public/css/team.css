@@ -12,3 +12,8 @@ section {
     margin: 0; }
   section img {
     margin: 30px; }
+
+.profiles {
+  display: inline; }
+  .profiles img {
+    padding: 10px; }
