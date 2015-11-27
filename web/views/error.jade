@@ -1,6 +1,13 @@
 extends layout
 
+block splash
+  .title
+    h1 We're Sorry!
+
+  .subtitle
+    p= message
+
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  section
+    p= error.status
+    p= error.stack

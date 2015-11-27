@@ -2,33 +2,46 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/css/layout.css')
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous")
+    link(rel="stylesheet" href="/css/base.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
 
     block css
     block scripts
 
+  - var BLOG_URL = 'http://blog.startupuw.com/';
+  - var LAUNCH_URL = 'http://launch.startupuw.com/';
+
   body
-    #header
-      #logo
-        p STARTUP UW
-
-      ul#links
-        a(href="/")
-          li HOME
-        a(href="/about")
-          li ABOUT
-        a(href="/team")
-          li TEAM
-        a(href="#footer")
-          li CONTACT
-
     #splash
-      .title
+      #header
+        #logo
+          img(src="/img/logo.png")
+          p STARTUP UW
+
+        ul#links
+          a(href="/")
+            li HOME
+          a(href="/events")
+            li EVENTS
+          a(href="/team")
+            li TEAM
+          a(target="_blank" href="#{LAUNCH_URL}")
+            li LAUNCH
+          a(target="_blank" href="#{BLOG_URL}")
+            li BLOG
+
+      #splash-title
         block splash
 
     #content
       block content
 
     #footer
-      p Contact
+      #social
+        a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+        a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+        a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
+        a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+        a(target="_blank" href="#{BLOG_URL}"): i.fa.fa-pencil-square
+        a(target="_blank" href="#{LAUNCH_URL}"): i.fa.fa-rocket
