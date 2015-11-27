@@ -5,7 +5,7 @@ block css
 
 block splash
   .title
-    h1= title.toUpperCase()
+    h1 STARTUP UW
 
   .subtitle
     p build skills &bull; meet people &bull; make things
@@ -22,49 +22,62 @@ mixin event(event)
 
 block content
 
-  section
+  #partners
+    ul
+      li
+        a(target="_blank" href="http://www.startuphall.org/"): img(src="/img/startup-hall.png")
+      li
+        a(target="_blank" href="http://foster.uw.edu/centers/buerk-ctr-entrepreneurship/"): img(src="/img/buerk.jpg")
+      li
+        a(target="_blank" href="http://comotion.uw.edu/"): img(src="/img/comotion.jpg")
+
+  section#about
     h1 A student community driven by startup culture
 
     p Startup UW is the University of Washington's largest student organization dedicated to entrepreneurship across all industries and disciplines.
 
-    // button Play Video
 
-  section
+  section#mission
     h1 A mission to inspire others and lead change
 
     p We believe innovation in the Pacific Northwest starts here. Our goal is to equip students with the resources, connections, and skills they need to kickstart their next impactful enterprise.
 
     p We believe we can help make Seattle and the UW an even better place for startups to thrive.
 
-    p: img(src="/img/home-1.jpg" width="100%")
+    img(src="/img/home-1.jpg" width="100%")
 
-  section
+  section#event-overview
     h1 Attend our upcoming events
 
-    p It's no secret we hold some killer events. We've held events featuring startup luminaries like Alexis Ohanian and Rand Fishkin. We hold dinners with founders. We have pitch nights, workshops, and more. Check out what we have in store for you!
+    p It's no secret we hold some killer events. We've hosted startup luminaries like Alexis Ohanian and Rand Fishkin. We hold dinners with founders, pitch nights, workshops, and more.
+
+    p Check out what we have lined up for you!
 
     if events
       #upcoming-events.events
-        h2 Upcoming
-        each event in events
-          +event(event)
-
-      #past-events.events
-        h2 Past
+        h2 Upcoming Events
         each event in events
           +event(event)
 
     p: a.button.large(href="/events") View All Events
 
-  section
+  section#launch-overview
     h1 Showcase your projects with Launch
 
-    p Working on something cool? Looking to get feedback or hire new people? Try out the Launch beta and show the UW community your hard work.
+    .pure-g
 
-    p: img(src="/img/launch.png" width="100%")
+      .pure-u-1.pure-u-md-2-3
+        img(src="/img/launch.png" width="100%")
 
-    p: a.button.large(href="#{LAUNCH_URL}") Visit Launch
+      .pure-u-1.pure-u-md-1-3
+        p Working on something cool? Looking to get feedback or hire new people?
 
-  section
+        p Try out the Launch beta and show the UW community what you've been working on.
+
+        p: a.button.large(href="#{LAUNCH_URL}") Visit Launch
+
+
+
+  section#newsletter
     h1 Keep up to date with Startup UW
     a.button.large Subscribe To Our Newsletter

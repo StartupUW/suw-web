@@ -3,8 +3,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: #333; }
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8); }
 
 #splash {
   width: 100%;
@@ -13,15 +13,22 @@ html, body {
   color: #333;
   text-align: center;
   background-size: cover; }
+  @media screen and (max-width: 768px) {
+    #splash {
+      height: 500px; } }
   #splash #header {
     font-size: 1em;
     height: 60px;
     letter-spacing: .3em; }
     #splash #header #logo {
-      display: inline-block;
-      left: 30px;
-      position: absolute;
-      margin-top: 10px; }
+      margin-top: 10px;
+      float: left;
+      margin-left: 40px;
+      display: inline-block; }
+      @media screen and (max-width: 768px) {
+        #splash #header #logo {
+          margin-left: 0;
+          float: none; } }
       #splash #header #logo p {
         display: inline-block;
         margin-left: 15px; }
@@ -30,22 +37,36 @@ html, body {
         height: 45px;
         display: inline; }
     #splash #header #links {
-      display: inline-block;
-      right: 40px;
-      position: absolute;
       font-size: .8em;
-      margin-top: 25px; }
-      #splash #header #links a li {
-        display: inline;
-        margin: 15px; }
-      #splash #header #links a:hover, #splash #header #links a:visited, #splash #header #links a:link, #splash #header #links a:active {
+      list-style: none;
+      float: right;
+      margin-right: 40px;
+      padding: 0; }
+      @media screen and (max-width: 768px) {
+        #splash #header #links {
+          margin-right: 0;
+          float: none; } }
+      #splash #header #links li {
         text-decoration: none;
-        color: #333; }
+        display: inline-block;
+        margin: 15px; }
+        #splash #header #links li a {
+          transition: all .15s;
+          -webkit-transition: all .15s; }
+          #splash #header #links li a:visited, #splash #header #links li a:link, #splash #header #links li a:active {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8); }
+          #splash #header #links li a:hover {
+            color: #33ccff; }
   #splash #splash-title {
-    margin-top: 130px; }
+    margin-top: 130px;
+    padding: 10px; }
     #splash #splash-title .title {
       letter-spacing: .3em;
       font-size: 3em; }
+      @media screen and (max-width: 768px) {
+        #splash #splash-title .title {
+          font-size: 1.5em; } }
     #splash #splash-title .subtitle {
       letter-spacing: .15em;
       font-size: 1.5em; }
@@ -53,7 +74,16 @@ html, body {
 section {
   max-width: 950px;
   margin: auto;
-  min-height: 200px; }
+  min-height: 200px;
+  text-align: center;
+  padding: 30px 50px; }
+  section h1 {
+    font-weight: 600;
+    font-size: 2em;
+    color: #333; }
+    @media screen and (max-width: 768px) {
+      section h1 {
+        font-size: 1.5em; } }
   section p {
     max-width: 700px;
     margin: 25px auto; }
@@ -64,15 +94,20 @@ section {
   border: 1px solid #aaa;
   text-decoration: none;
   background-color: white;
-  margin: 0 10px;
   border-radius: 3px;
   display: inline-block;
-  min-width: 30px; }
+  min-width: 30px;
+  font-weight: 600; }
+  .button:active, .button:visited {
+    color: rgba(0, 0, 0, 0.8); }
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; }
   .button.large {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 10px 20px; }
   .button.small {
-    font-size: 0.75em;
+    font-size: 0.7em;
     padding: 5px 10px; }
 
 #footer {
@@ -85,7 +120,11 @@ section {
   #footer a {
     color: white;
     font-size: 1.5em;
-    margin: 0 10px; }
+    margin: 0 10px;
+    transition: all .15s;
+    -webkit-transition: all .15s; }
     #footer a li {
       display: inline;
       margin: 15px; }
+    #footer a:hover {
+      color: #aaaaaa; }
