@@ -50,16 +50,11 @@ html, body {
         text-decoration: none;
         display: inline-block;
         margin: 15px; }
-        #splash #header #links li a {
-          transition: all .15s;
-          -webkit-transition: all .15s; }
-          #splash #header #links li a:visited, #splash #header #links li a:link, #splash #header #links li a:active {
-            text-decoration: none;
-            color: rgba(0, 0, 0, 0.8); }
-          #splash #header #links li a:hover {
-            color: #33ccff; }
+        #splash #header #links li a:visited, #splash #header #links li a:link, #splash #header #links li a:active {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.8); }
   #splash #splash-title {
-    margin-top: 130px;
+    margin-top: 100px;
     padding: 10px; }
     #splash #splash-title .title {
       letter-spacing: .3em;
