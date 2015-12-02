@@ -11,7 +11,31 @@ section {
     font-weight: 300;
     margin: 0; }
   section img {
-    margin: 30px; }
+    margin: 10px; }
+
+.team-name {
+  text-align: left;
+  padding: 10px;
+  margin: 0px;
+  min-height: 0px; }
+  .team-name h2 {
+    font-weight: 400;
+    padding-top: 10px;
+    margin: 0; }
 
 .team {
-  padding: 10px; }
+  padding: 10px;
+  padding-top: 0px; }
+  .team h1 {
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 10px;
+    margin: 0px; }
+  .team h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px; }
+  .team p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
