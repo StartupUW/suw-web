@@ -32,7 +32,7 @@ section {
   .team a {
     color: #33ccff;
     text-decoration: none; }
-    .team a:hover {
+    .team a:hover, .team a:visited, .team a:link, .team a:active {
       color: #33ccff;
       text-decoration: none;
       cursor: pointer; }
