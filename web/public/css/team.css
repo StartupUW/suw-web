@@ -13,7 +13,5 @@ section {
   section img {
     margin: 30px; }
 
-.profiles {
-  display: inline; }
-  .profiles img {
-    padding: 10px; }
+.team {
+  padding: 10px; }

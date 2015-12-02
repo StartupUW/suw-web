@@ -2,6 +2,7 @@ extends layout
 
 block css
     link(rel='stylesheet', href='/css/team.css')
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==", crossorigin="anonymous")
 
 block splash
   .title
@@ -16,13 +17,22 @@ block content
     h2 Meet our team
     h1 Our Geniuses
 
-  .team.row
-      .profiles.col-md-3
-        a: img(src="/img/eric.jpg" width="20%")
-      .profiles.col-md-3
-        a: img(src="/img/dan.jpg" width="20%")
-      .profiles.col-md-3
-        a: img(src="/img/vard.jpg" width="20%")      	
+  .row
+      .col-md-4
+        section.team
+          img(src="/img/eric.jpg" width = "40%")
+          p.
+            Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studied economics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
+      .col-md-4
+        section.team
+          img(src="/img/dan.jpg" width="42%")
+          p.
+            Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studied economics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
+      .col-md-4
+        section.team
+          img(src="/img/vard.jpg" width="40%")
+          p.
+            Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studied economics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.      	
 
 
    
