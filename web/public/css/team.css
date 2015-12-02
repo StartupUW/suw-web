@@ -13,6 +13,9 @@ section {
   section img {
     margin: 10px; }
 
+.top h1 {
+  color: #33ccff; }
+
 .team-name {
   text-align: left;
   padding: 10px;
@@ -26,6 +29,13 @@ section {
 .team {
   padding: 10px;
   padding-top: 0px; }
+  .team a {
+    color: #33ccff;
+    text-decoration: none; }
+    .team a:hover {
+      color: #33ccff;
+      text-decoration: none;
+      cursor: pointer; }
   .team h1 {
     font-weight: 500;
     font-size: 2em;
@@ -39,3 +49,9 @@ section {
   .team p {
     margin-top: 10px;
     margin-bottom: 10px; }
+  .team #links a {
+    color: #333;
+    font-size: 1.5em;
+    margin: 0 10px; }
+    .team #links a:hover {
+      color: #33ccff; }
