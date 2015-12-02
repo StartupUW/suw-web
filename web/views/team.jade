@@ -5,20 +5,17 @@ block css
     link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==", crossorigin="anonymous")
 
 block splash
-  .title
-    h1= title.toUpperCase()
-
-  .subtitle
-    p Something about the team! We are amazing!
+  .background-image
+    .title
+      h1= title.toUpperCase()
+    .subtitle
+      p Something about the team! We are amazing!
 
 block content
 
   section.top
     h2 Meet our team
     h1 Our Geniuses
-
-  section.team-name
-    h2 The ... team
 
   .row
       .col-md-6
@@ -58,7 +55,7 @@ block content
             a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
       .col-md-4
         section.team
-          img(src="/img/dan.jpg" width="43%").img-rounded
+          img(src="/img/dan.jpg" width="40%").img-rounded
           a(target="_blank" href="/"): h1 Daniel Fang
           h2 Technology Director
           p.
@@ -78,6 +75,73 @@ block content
             a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
             a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
 
+  .row
+      .col-md-4
+        section.team
+          img(src="/img/riya.jpg" width = "40%").img-rounded
+          a(target="_blank" href="/"): h1 Riya SF
+          h2 Operations Director
+          p.
+            Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studied economics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+      .col-md-4
+        section.team
+          img(src="/img/kathy.jpg" width="40%").img-rounded
+          a(target="_blank" href="/"): h1 Kathy Tuan
+          h2 Marketing Director
+          p.
+            Geert brings a worldly view to Betterment, assists with our capital markets and returns assumptions as well as the mathematical nuances of portfolio optimization.
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+      .col-md-4
+        section.team
+          img(src="/img/sachin.jpg" width="40%").img-rounded
+          a(target="_blank" href="/"): h1 Sachin Makaram
+          h2 Operaions Director
+          p.
+            Dan was the Behavioral Finance Specialist at Barclays Americas and helped found the London team in 2007. He earned his Master of Science in Decision Science from the London School of Economics.
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
 
-   
+  .row
+      .col-md-4
+        section.team
+          img(src="/img/divye.jpg" width = "40%").img-rounded
+          a(target="_blank" href="/"): h1 Divye Pratap Jain
+          h2 Marketing & Technology Director
+          p.
+            Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studied economics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+      .col-md-4
+        section.team
+          img(src="/img/daniel.jpg" width="40%").img-rounded
+          a(target="_blank" href="/"): h1 Daniel Ho
+          h2 Operations Director
+          p.
+            Geert brings a worldly view to Betterment, assists with our capital markets and returns assumptions as well as the mathematical nuances of portfolio optimization.
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+      .col-md-4
+        section.team
+          img(src="/img/ayush.jpg" width="40%").img-rounded
+          a(target="_blank" href="/"): h1 Ayush Saraf
+          h2 Technology Director
+          p.
+            Dan was the Behavioral Finance Specialist at Barclays Americas and helped found the London team in 2007. He earned his Master of Science in Decision Science from the London School of Economics.
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
 
