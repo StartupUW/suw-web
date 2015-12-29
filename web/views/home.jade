@@ -1,7 +1,7 @@
 extends layout
 
 block css
-    link(rel='stylesheet', href='/css/home.css')
+  != CDN('/css/home.css')
 
 block splash
   .title
@@ -22,15 +22,6 @@ mixin event(event)
 
 block content
 
-  #partners
-    ul
-      li
-        a(target="_blank" href="http://www.startuphall.org/"): img(src="/img/startup-hall.png")
-      li
-        a(target="_blank" href="http://foster.uw.edu/centers/buerk-ctr-entrepreneurship/"): img(src="/img/buerk.jpg")
-      li
-        a(target="_blank" href="http://comotion.uw.edu/"): img(src="/img/comotion.jpg")
-
   section#about
     h1 A student community driven by startup culture
 
@@ -44,7 +35,7 @@ block content
 
     p We believe we can help make Seattle and the UW an even better place for startups to thrive.
 
-    img(src="/img/home-1.jpg" width="100%")
+    != CDN('/img/home-1.jpg', { 'width': '100%' })
 
   section#event-overview
     h1 Attend our upcoming events
@@ -67,7 +58,7 @@ block content
     .pure-g
 
       .pure-u-1.pure-u-md-2-3
-        img(src="/img/launch.png" width="100%")
+        != CDN('/img/launch.png', { 'width': '100%' })
 
       .pure-u-1.pure-u-md-1-3
         p Working on something cool? Looking to get feedback or hire new people?

@@ -1,6 +1,6 @@
-#### joe made this: http://goel.io/joe
-
 config/
 reports/
 node_modules/
 shippable/
+
+*.log
