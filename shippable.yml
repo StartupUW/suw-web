@@ -4,7 +4,7 @@ node_js:
   - 0.11
 
 env:
-  - NODE_ENV=production AWS_S3_KEY=test_key AWS_S3_SECRET=test_secret
+  - AWS_S3_KEY=test_key AWS_S3_SECRET=test_secret
 
 before_install:
   - cd web/
