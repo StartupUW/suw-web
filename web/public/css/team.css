@@ -3,16 +3,18 @@
   margin-top: 0; }
 
 .background-image {
-  padding: 50px;
+  padding: 8.7em;
   z-index: 1;
   display: block;
-  background-image: url("/img/team.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/img/team.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px; }
   .background-image .title {
     color: white;
     z-index: 9999; }
+    .background-image .title h1 {
+      font-size: 2.5em; }
   .background-image .subtitle {
     color: white;
     z-index: 9999; }
