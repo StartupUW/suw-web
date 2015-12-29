@@ -21,14 +21,6 @@ describe('Homepage view', function() {
       .end(done);
   });
 
-  it('has a partners div', function(done) {
-    request
-      .get('/')
-      .expect(200)
-      .expect(/<div id="partners">/)
-      .end(done);
-  });
-
   it('has all the correct sections', function(done) {
     request
       .get('/')
