@@ -4,11 +4,11 @@ html, body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.8); }
+  color: rgba(0, 0, 0, 0.65); }
 
 a:visited, a:link, a:active, a:hover {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.8); }
+  color: rgba(0, 0, 0, 0.65); }
 
 #splash {
   width: 100%;
@@ -21,7 +21,7 @@ a:visited, a:link, a:active, a:hover {
     #splash {
       height: 500px; } }
   #splash #header {
-    font-size: 1em;
+    font-size: 0.95em;
     height: 60px;
     letter-spacing: .3em; }
     #splash #header #logo {
@@ -65,7 +65,8 @@ a:visited, a:link, a:active, a:hover {
           font-size: 1.5em; } }
     #splash #splash-title .subtitle {
       letter-spacing: .15em;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      color: rgba(0, 0, 0, 0.65); }
 
 section {
   max-width: 950px;
@@ -82,7 +83,8 @@ section {
         font-size: 1.5em; } }
   section p {
     max-width: 700px;
-    margin: 25px auto; }
+    font-size: 0.95em;
+    margin: 30px auto; }
 
 .button {
   cursor: pointer;
@@ -94,11 +96,11 @@ section {
   display: inline-block;
   min-width: 30px;
   font-weight: 600d;
-  color: rgba(0, 0, 0, 0.8); }
+  color: rgba(0, 0, 0, 0.65); }
   .button:active, .button:visited {
-    color: rgba(0, 0, 0, 0.8); }
+    color: rgba(0, 0, 0, 0.65); }
   .button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.65);
     color: white; }
   .button.large {
     font-size: 1em;
@@ -108,7 +110,7 @@ section {
     padding: 5px 10px; }
 
 #footer {
-  font-size: 1em;
+  font-size: 0.95em;
   width: 100%;
   height: 50px;
   padding-top: 15px;
