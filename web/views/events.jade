@@ -9,3 +9,32 @@ block splash
 
   .subtitle
     p welcome to #{title.toLowerCase()}
+
+mixin event(event, no)
+  .event(style='margin-left: ' + no*50  + '%' )
+    a(href=event.link).name=event.name
+    .at
+      i.fa.fa-clock-o
+      span #{event.at} #{event.date}
+    .location
+      i.fa.fa-map-marker
+      span=  event.location
+
+block content
+  if events
+    #all-events.events
+      -var i = 0
+      each event in events
+        +event(event, i%2)
+        -i++
+    script.
+      var num=document.getElementsByClassName("event")[0].clientHeight + 35;
+      document.getElementById("all-events").style.height = num + "px"
+      var something = function() {
+        var num=document.getElementsByClassName("event")[0].clientHeight + 35;
+        document.getElementById("all-events").style.height = document.getElementById("all-events").clientHeight + num + "px"
+        console.log(num)
+
+      }   
+    button(onclick='something()') VIEW MORE
+
