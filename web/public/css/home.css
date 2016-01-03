@@ -15,18 +15,11 @@
     .events .event .fa {
       margin-right: 7px; }
 
+#mission img {
+  margin-top: 35px; }
+
 #launch-overview p, #launch-overview .button {
   text-align: left; }
   @media screen and (max-width: 768px) {
     #launch-overview p, #launch-overview .button {
       text-align: center; } }
-
-#partners ul {
-  text-align: center;
-  list-style: none;
-  padding-left: 0; }
-  #partners ul li {
-    display: inline;
-    margin: 0 50px; }
-    #partners ul li img {
-      max-height: 100px; }
