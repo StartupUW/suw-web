@@ -49,6 +49,14 @@ describe('Homepage view', function() {
       .end(done);
   });
 
+  it('has a link to the newsletter', function(done) {
+    request
+      .get('/')
+      .expect(200)
+      .expect(/eepurl.com/)
+      .end(done);
+  });
+
   it('has a link to the blog', function(done) {
     request
       .get('/')
