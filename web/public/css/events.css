@@ -7,25 +7,35 @@ section {
     font-size: 2.2em; }
 
 #all-events {
-  width: 50%;
+  width: 100%;
   margin: auto;
-  margin-left: 25%;
-  overflow: hidden;
-  height: 111px; }
+  overflow: hidden; }
 
 .events {
-  width: 50%;
-  display: inline-block; }
+  width: 100%;
+  display: inline-block;
+  background-color: #fafafa; }
   .events .event {
-    border-left: 7px solid #33ccff;
-    padding-left: 5px;
-    margin-bottom: 35px;
-    width: 50%;
-    margin-left: 0%; }
-    .events .event .location, .events .event .at, .events .event .name {
-      margin-bottom: 10px; }
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    width: 98%;
+    margin-top: 10px;
+    margin-left: 1%; }
+    .events .event .location, .events .event .at {
+      padding-left: 10px; }
     .events .event .name {
-      margin-top: 0;
-      font-weight: 600; }
+      font-weight: 900;
+      margin-top: 10px;
+      padding-left: 4px;
+      padding-bottom: 10px;
+      font-size: 30px; }
+      .events .event .name:hover {
+        color: #33ccff; }
     .events .event .fa {
       margin-right: 7px; }
+    .events .event .img {
+      margin: 10px; }
+    .events .event .description {
+      margin-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px; }
