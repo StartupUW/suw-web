@@ -11,4 +11,4 @@ before_install:
 
 script:
   - npm test
-  - pwd; cd ../scripts/; pwd; python -m unittest test.fb_api
+  - npm run-script test-python
