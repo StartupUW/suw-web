@@ -1,10 +1,12 @@
 doctype html
 html
   head
-    title= title
-    link(rel="stylesheet" href="/css/base.css")
+    title Startup UW | #{title}
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css")
+    link(rel="shortcut icon" href="/img/logo.png")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
+    != CDN('/css/base.css')
 
     block css
     block scripts
@@ -15,21 +17,16 @@ html
   body
     #splash
       #header
-        #logo
-          img(src="/img/logo.png")
+        a#logo(href="/")
+          != CDN('/img/logo.png')
           p STARTUP UW
 
         ul#links
-          a(href="/")
-            li HOME
-          a(href="/events")
-            li EVENTS
-          a(href="/team")
-            li TEAM
-          a(target="_blank" href="#{LAUNCH_URL}")
-            li LAUNCH
-          a(target="_blank" href="#{BLOG_URL}")
-            li BLOG
+          li: a(href="/") HOME
+          li: a(href="/events") EVENTS
+          li: a(href="/team") TEAM
+          li: a(target="_blank" href="#{LAUNCH_URL}") LAUNCH
+          li: a(target="_blank" href="#{BLOG_URL}") BLOG
 
       #splash-title
         block splash

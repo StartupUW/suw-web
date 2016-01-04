@@ -1,15 +1,8 @@
 @import _variables
 
-section
-  text-align: center
-  padding: 30px 50px
-
-  h1
-    font-weight: 600
-    font-size: 2.2em
-
 .events
-  width: 50%
+  width: 100%
+  max-width: 500px
   display: inline-block
 
   .event
@@ -19,8 +12,21 @@ section
 
     .location, .at, .name
       margin-bottom: 10px
+
     .name
       margin-top: 0
       font-weight: 600
+
     .fa
       margin-right: 7px
+
+#mission
+  img
+    margin-top: 35px
+
+#launch-overview
+  p, .button
+    text-align: left
+
+    @media screen and (max-width: 768px)
+      text-align: center

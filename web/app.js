@@ -9,6 +9,29 @@ var routes = require('./routes/index');
 
 var app = express();
 
+var sslEnabled = false;
+var development = app.get('env') === 'development';
+
+// Set the CDN options
+var options = {
+  publicDir  : path.join(__dirname, 'public'),
+  viewsDir   : path.join(__dirname, 'views'),
+  domain     : 'cdn.startupuw.com',
+  bucket     : 'startupuw-cdn',
+  key        : process.env.AWS_S3_KEY,
+  secret     : process.env.AWS_S3_SECRET,
+  hostname   : 'localhost',
+  port       : (sslEnabled ? 443 : 80),
+  ssl        : sslEnabled,
+  production : !development
+};
+
+// Initialize the CDN magic
+var CDN = require('express-cdn')(app, options);
+
+// Add the view helper
+app.locals.CDN = CDN();
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -20,6 +43,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.enable('view cache');
 
 app.use('/', routes);
 
@@ -34,7 +58,7 @@ app.use(function(req, res, next) {
 
 // development error handler
 // will print stacktrace
-if (app.get('env') === 'development') {
+if (development) {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
