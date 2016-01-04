@@ -17,7 +17,7 @@ var mockEvents = [
 
 module.exports = function(req, res, next) {
   res.render('home', {
-    title: 'Startup UW',
+    title: 'Home',
     events: mockEvents
   });
 };

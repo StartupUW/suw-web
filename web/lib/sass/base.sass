@@ -7,7 +7,11 @@ html, body
   margin: 0
   padding: 0
   font-family: $primary-font
-  font-weight: 300
+  font-weight: 400
+  color: $primary-color
+
+a:visited, a:link, a:active, a:hover
+  text-decoration: none
   color: $primary-color
 
 #splash
@@ -18,16 +22,23 @@ html, body
   text-align: center
   background-size: cover
 
+  @media screen and (max-width: $mobile-screen)
+    height: 500px
+
   #header
     font-size: $primary-font-size
     height: $header-height
     letter-spacing: .3em
 
     #logo
-      display: inline-block
-      left: $header-margin - 10
-      position: absolute
       margin-top: 10px
+      float: left
+      margin-left: $header-margin
+      display: inline-block
+
+      @media screen and (max-width: $mobile-screen)
+        margin-left: 0
+        float: none
 
       p
         display: inline-block
@@ -39,40 +50,56 @@ html, body
         display: inline
 
     #links
-      display: inline-block
-      right: $header-margin
-      position: absolute
       font-size: .8em
-      margin-top: 25px
+      list-style: none
+      float: right
+      margin-right: $header-margin
 
-      a
-        li
-          display: inline
-          margin: 15px
+      padding: 0
 
-        &:hover, &:visited, &:link, &:active
-          text-decoration: none
-          color: $primary-color
+      @media screen and (max-width: $mobile-screen)
+        margin-right: 0
+        float: none
+
+      li
+        text-decoration: none
+        display: inline-block
+        margin: 15px
 
   #splash-title
-    margin-top: 130px
+    margin-top: 100px
+    padding: 10px
 
     .title
       letter-spacing: .3em
       font-size: $title-font-size
 
+      @media screen and (max-width: $mobile-screen)
+        font-size: $title-font-size-mobile
+
     .subtitle
       letter-spacing: .15em
       font-size: $subtitle-font-size
+      color: $primary-color
 
 section
   max-width: 950px
   margin: auto
   min-height: 200px
+  text-align: center
+  padding: 30px 50px
 
+  h1
+    font-weight: 600
+    font-size: 2em
+    color: $title-color
+
+    @media screen and (max-width: $mobile-screen)
+      font-size: 1.5em
   p
     max-width: 700px
-    margin: 25px auto
+    font-size: $primary-font-size
+    margin: 30px auto
 
 .button
   cursor: pointer
@@ -80,10 +107,18 @@ section
   border: 1px solid #aaa
   text-decoration: none
   background-color: white
-  margin: 0 10px
   border-radius: 3px
   display: inline-block
   min-width: 30px
+  font-weight: 600d
+  color: $primary-color
+
+  &:active, &:visited
+    color: $primary-color
+
+  &:hover
+    background-color: $primary-color
+    color: white
 
   &.large
     font-size: $button-large-font-size
@@ -106,7 +141,12 @@ section
       color: white
       font-size: 1.5em
       margin: 0 10px
+      transition: all .15s
+      -webkit-transition: all .15s
 
       li
         display: inline
         margin: 15px
+
+      &:hover
+        color: #aaaaaa
