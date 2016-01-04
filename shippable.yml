@@ -10,4 +10,4 @@ before_install:
   - cd scripts/
 
 script:
-  - python -m inittest test.fb_api
+  - python -m unittest test.fb_api
