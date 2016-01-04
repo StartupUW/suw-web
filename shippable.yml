@@ -6,6 +6,9 @@ node_js:
 env:
   - AWS_S3_KEY=test_key AWS_S3_SECRET=test_secret
 
+before_install:
+  - cd web/
+
 script:
-  - cd web/; npm install; npm test
-  - cd scripts/; python -m unittest test.fb_api
+  - npm test
+  - cd ../scripts/; python -m unittest test.fb_api
