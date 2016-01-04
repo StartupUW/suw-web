@@ -1,12 +1,101 @@
 @import _variables
 
+#splash
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/img/team.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 0 $header-height;
+  #links
+    @media screen and (max-width: $mobile-screen)
+      a
+        color: white
+  #splash-title
+    margin-top: 0px
+    .title
+      color: white
+      z-index: 10
+  
+      h1
+        margin: 130px
+        font-size: 2.5em
+        @media screen and (max-width: $mobile-screen)
+          margin: 70px
+
+    .subtitle
+      color: white
+      z-index: 9999
+
 section
+  padding: 5px
   text-align: center
-  padding: 30px 50px
 
   h1
     font-weight: 600
-    font-size: 2.2em
+    font-size: 3.2em
+    margin: 0px
+
+  h2
+    font-weight: 300
 
   img
-    margin: 30px
+    margin: 10px
+
+.top
+  h1
+    color: $suw
+
+
+.team
+  padding-top: 0px
+  padding-bottom: 30px
+
+  img
+    width: 80%
+
+  a
+    color: $suw
+    text-decoration: none
+    
+    &:hover, &:visited, &:link, &:active
+      color: $suw
+      text-decoration: none
+      cursor: pointer 
+
+  h1
+    font-weight: 500
+    font-size: 2em
+    padding-top: 10px
+    margin: 0px
+
+  h2
+    font-weight: 300
+    font-size: 1.2em
+    margin: 0px
+    padding: 0px
+  
+  p
+    margin: 5px
+    padding: 10px
+    text-align: center
+  
+  #links
+    a
+      color: $primary-color
+      font-size: 1.5em
+      margin: 0 10px
+
+      &:hover
+        color: $suw
+
+.img-rounded
+  border-radius: 5px
+
+
+.container
+  max-width: 1080px
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+
+
