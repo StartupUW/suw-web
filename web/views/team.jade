@@ -2,121 +2,120 @@ extends layout
 
 block css
     link(rel='stylesheet', href='/css/team.css')
-    //- link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==", crossorigin="anonymous")
 
 block splash
   .title
     h1= title.toUpperCase()
   .subtitle
-    p Something about the team! We are amazing!
+
 
 block content
 
   section.top
     h2 Meet our team
     h1 Our Geniuses
-
-  .pure-g
-    .pure-u-1.pure-u-md-1-2
-      section.team
-        != CDN('/img/malia.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Malia Imayama
-        h2 Co-President
-        p.
-          Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studieeconomics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
-          a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
-          a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
-    .pure-u-1.pure-u-md-1-2
-      section.team
-        != CDN('/img/mahir.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Mahir Kothary
-        h2 Co-President
-        p.
-          Geert brings a worldly view to Betterment, assists with our capital markets and returns assumptions as well as thmathematical nuances of portfolio optimization.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
-  .pure-g
-    .pure-u-1.pure-u-md-1-3
-      section.team
-        != CDN('/img/eric.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Eric Wang
-        h2 Operations Director
-        p.
-          Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studieeconomics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
-          a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
-          a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
-    .pure-u-1.pure-u-md-1-3
-      section.team
-        != CDN('/img/dan.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Daniel Fang
-        h2 Technology Director
-        p.
-          Geert brings a worldly view to Betterment, assists with our capital markets and returns assumptions as well as thmathematical nuances of portfolio optimization.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
-    .pure-u-1.pure-u-md-1-3
-      section.team
-        != CDN('/img/vard.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Vardhman Mehta
-        h2 Technology & Finance Director
-        p.
-          Dan was the Behavioral Finance Specialist at Barclays Americas and helped found the London team in 2007. He earned hiMaster of Science in Decision Science from the London School of Economics.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
-          a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
-
-  .pure-g
-    .pure-u-1.pure-u-md-1-3
-      section.team
-        != CDN('/img/riya.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Riya SF
-        h2 Operations Director
-        p.
-          Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studieeconomics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
-          a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
-          a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
-    .pure-u-1.pure-u-md-1-3
-      section.team
-        != CDN('/img/kathy.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Kathy Tuan
-        h2 Marketing Director
-        p.
-          Geert brings a worldly view to Betterment, assists with our capital markets and returns assumptions as well as thmathematical nuances of portfolio optimization.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
-    .pure-u-1.pure-u-md-1-3
-      section.team
-        != CDN('/img/sachin.jpg', { 'width': '100%' , 'class':'img-rounded'})
-        a(target="_blank" href="/"): h1 Sachin Makaram
-        h2 Operaions Director
-        p.
-          Dan was the Behavioral Finance Specialist at Barclays Americas and helped found the London team in 2007. He earned hiMaster of Science in Decision Science from the London School of Economics.
-        #links
-          a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
-          a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
-          a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
-
-  .pure-g
+  .container
+    .pure-g
+      .pure-u-1.pure-u-md-1-2
+        section.team
+          != CDN('/img/malia.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Malia Imayama
+          h2 Co-President
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+      .pure-u-1.pure-u-md-1-2
+        section.team
+          != CDN('/img/mahir.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Mahir Kothary
+          h2 Co-President
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+    .pure-g
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/eric.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Eric Wang
+          h2 Operations Director
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/dan.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Daniel Fang
+          h2 Technology Director
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/vard.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Vardhman Mehta
+          h2 Technology & Finance Director
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+  
+    .pure-g
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/riya.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Riya Nath
+          h2 Operations Director
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/kathy.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Kathy Tuan
+          h2 Marketing Director
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/sachin.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Sachin Makaram
+          h2 Operaions Director
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
+            a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
+  
+    .pure-g
       .pure-u-1.pure-u-md-1-3
         section.team
           != CDN('/img/divye.jpg', { 'width': '100%' , 'class':'img-rounded'})
           a(target="_blank" href="/"): h1 Divye Pratap Jain
           h2 Marketing & Technology Director
           p.
-            Jon started Betterment after years of consulting for Wall Street’s biggest financial institutions. He studied economics at Harvard University and finance at Columbia Business School. He is a CFA® charterholder.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
           #links
             a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
             a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
@@ -128,7 +127,7 @@ block content
           a(target="_blank" href="/"): h1 Daniel Ho
           h2 Operations Director
           p.
-            Geert brings a worldly view to Betterment, assists with our capital markets and returns assumptions as well as the mathematical nuances of portfolio optimization.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
           #links
             a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
             a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
@@ -138,9 +137,30 @@ block content
           a(target="_blank" href="/"): h1 Ayush Saraf
           h2 Technology Director
           p.
-            Dan was the Behavioral Finance Specialist at Barclays Americas and helped found the London team in 2007. He earned his Master of Science in Decision Science from the London School of Economics.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
           #links
             a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
             a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram       
             a(target="_blank" href="mailto:team@startupuw.com"): i.fa.fa-envelope-square
-
+    .pure-g
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/mike.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Mike Guevarra
+          h2 Freshmen Representative
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+      .pure-u-1.pure-u-md-1-3
+        section.team
+          != CDN('/img/krish.jpg', { 'width': '100%' , 'class':'img-rounded'})
+          a(target="_blank" href="/"): h1 Krishang Swami
+          h2 Deisgner
+          p.
+            Lorem ipsum dolor sit amet, sea noster nostro labitur ex. Ne vix causae luptatum, in ludus consectetuer qui, ea mel suas everti rationibus. Homero inermis eum eu. 
+          #links
+            a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
+            a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
+      .pure-u-1.pure-u-md-1-3
