@@ -88,6 +88,7 @@ def main():
 	events = get_events_schema()
 	flush_events_table(conn, engine, events)
 	fill_events_table(conn,  events, data)
+
 if __name__ == "__main__":
 	main()
 
