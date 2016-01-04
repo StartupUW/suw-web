@@ -4,8 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 60px; }
-  #splash #header {
-    background-color: white; }
+  @media screen and (max-width: 768px) {
+    #splash #links a {
+      color: white; } }
   #splash #splash-title {
     margin-top: 0px; }
     #splash #splash-title .title {
@@ -14,6 +15,9 @@
       #splash #splash-title .title h1 {
         margin: 125px;
         font-size: 2.5em; }
+        @media screen and (max-width: 768px) {
+          #splash #splash-title .title h1 {
+            margin: 70px; } }
     #splash #splash-title .subtitle {
       color: white;
       z-index: 9999; }
@@ -66,9 +70,8 @@ section {
     margin: 0px;
     padding: 0px; }
   .team p {
-    text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    padding: 10px;
+    text-align: justify; }
   .team #links a {
     color: rgba(0, 0, 0, 0.65);
     font-size: 1.5em;

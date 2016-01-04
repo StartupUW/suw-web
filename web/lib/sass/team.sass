@@ -5,8 +5,10 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: 0 $header-height;
-  #header
-    background-color: white 
+  #links
+    @media screen and (max-width: $mobile-screen)
+      a
+        color: white
   #splash-title
     margin-top: 0px
     .title
@@ -16,7 +18,9 @@
       h1
         margin: 125px
         font-size: 2.5em
-  
+        @media screen and (max-width: $mobile-screen)
+          margin: 70px
+
     .subtitle
       color: white
       z-index: 9999
@@ -80,9 +84,8 @@ section
     padding: 0px
   
   p
+    padding: 10px
     text-align: justify
-    margin-top: 10px
-    margin-bottom: 10px
   
   #links
     a
