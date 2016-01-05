@@ -4,62 +4,54 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/img/team.jpg")
   background-repeat: no-repeat
   background-size: cover
-  background-position: 0 $header-height;
+  background-position: center $header-height + 10;
+
   #links
     @media screen and (max-width: $mobile-screen)
       a
         color: white
+
   #splash-title
     margin-top: 0px
+
     .title
       color: white
-      z-index: 10
-  
+
       h1
-        margin: 130px
-        font-size: 2.5em
+        margin-top: 150px
+        font-size: 1.75em
+
         @media screen and (max-width: $mobile-screen)
-          margin: 70px
+          margin-top: 120px
 
     .subtitle
       color: white
-      z-index: 9999
-
-section
-  padding: 5px
-  text-align: center
-
-  h1
-    font-weight: 600
-    font-size: 3.2em
-    margin: 0px
-
-  h2
-    font-weight: 300
-
-  img
-    margin: 10px
 
 .top
   h1
-    color: $suw
-
+    text-align: center
+    margin: 75px 0
+    font-weight: 600
+    font-size: 2em
+    color: $title-color
 
 .team
   padding-top: 0px
   padding-bottom: 30px
+  text-align: center
 
   img
+    margin: 10px
     width: 80%
 
   a
     color: $suw
     text-decoration: none
-    
+
     &:hover, &:visited, &:link, &:active
       color: $suw
       text-decoration: none
-      cursor: pointer 
+      cursor: pointer
 
   h1
     font-weight: 500
@@ -72,13 +64,13 @@ section
     font-size: 1.2em
     margin: 0px
     padding: 0px
-  
+
   p
     margin: 5px
     padding: 10px
-    text-align: center
-  
-  #links
+    font-size: .85em
+
+  .links
     a
       color: $primary-color
       font-size: 1.5em
@@ -90,12 +82,9 @@ section
 .img-rounded
   border-radius: 5px
 
-
 .container
-  max-width: 1080px
+  max-width: 1000px
   height: auto;
   margin: 0 auto;
   padding: 10px;
   position: relative;
-
-

@@ -3,44 +3,36 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/team.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 60px; }
+  background-position: center 70px; }
   @media screen and (max-width: 768px) {
     #splash #links a {
       color: white; } }
   #splash #splash-title {
     margin-top: 0px; }
     #splash #splash-title .title {
-      color: white;
-      z-index: 10; }
+      color: white; }
       #splash #splash-title .title h1 {
-        margin: 130px;
-        font-size: 2.5em; }
+        margin-top: 150px;
+        font-size: 1.75em; }
         @media screen and (max-width: 768px) {
           #splash #splash-title .title h1 {
-            margin: 70px; } }
+            margin-top: 120px; } }
     #splash #splash-title .subtitle {
-      color: white;
-      z-index: 9999; }
-
-section {
-  padding: 5px;
-  text-align: center; }
-  section h1 {
-    font-weight: 600;
-    font-size: 3.2em;
-    margin: 0px; }
-  section h2 {
-    font-weight: 300; }
-  section img {
-    margin: 10px; }
+      color: white; }
 
 .top h1 {
-  color: #33ccff; }
+  text-align: center;
+  margin: 75px 0;
+  font-weight: 600;
+  font-size: 2em;
+  color: #333; }
 
 .team {
   padding-top: 0px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  text-align: center; }
   .team img {
+    margin: 10px;
     width: 80%; }
   .team a {
     color: #33ccff;
@@ -62,19 +54,19 @@ section {
   .team p {
     margin: 5px;
     padding: 10px;
-    text-align: center; }
-  .team #links a {
+    font-size: .85em; }
+  .team .links a {
     color: rgba(0, 0, 0, 0.65);
     font-size: 1.5em;
     margin: 0 10px; }
-    .team #links a:hover {
+    .team .links a:hover {
       color: #33ccff; }
 
 .img-rounded {
   border-radius: 5px; }
 
 .container {
-  max-width: 1080px;
+  max-width: 1000px;
   height: auto;
   margin: 0 auto;
   padding: 10px;
