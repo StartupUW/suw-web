@@ -1,41 +1,62 @@
-//sample form
-var mockEvents = [
-  {
-    name: 'Winter Info Night',
-    at: '5:00pm - 7:00pm',
-    date: 'Jan 07, 2015',
-    location: 'Startup Hall',
-    link: 'https://www.facebook.com/events/1637507709870963/',
-    desc: 'This week’s Startup UW Night will feature a new, fun activity! Nathan For You, an entrepreneur saving businesses from their low’s, does so with some interesting approaches. We will have breakout sessions after viewing the episode where YOU decide the best way to save the company!'
-  }
-];
-
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('suw', 'postgres', 'postgres', {dialect: 'mysql', port: 5432});
-var bbInfo = sequelize.define('events', {
-	name: {
-		type: Sequelize.TEXT
-	},
-	at:{
-		type: Sequelize.TIME
-	},
-	date:{
-		type: Sequelize.DATE
-	},
-	location:{
-		type: Sequelize.TEXT
-	},
-	link:{
-		type: Sequelize.TEXT 
-	},
-	desc:{
-		type: Sequelize.TEXT
-	}	
+var sequelize = new Sequelize('postgres://postgres:postgres@localhost:5432/suw'); // Change this part
+
+var User = sequelize.define('events', {
+    id: {
+        type: Sequelize.STRING,
+        field: 'id',
+        primaryKey: true
+    },
+    name: {
+        type: Sequelize.STRING,
+        field: 'name',
+        allowNull: false
+    },
+    desc: {
+        type: Sequelize.STRING,
+        field: 'desc',
+        allowNull: true
+    },
+    place : {
+        type : Sequelize.STRING,
+        field : 'place',
+        allowNull : false
+    },
+    lat : {
+        type : Sequelize.DOUBLE,
+        field : 'lat',
+        allowNull : true
+    },
+    lng : {
+        type : Sequelize.DOUBLE,
+        field : 'lng',
+        allowNull : true
+    },
+    start_time : {
+        type : Sequelize.DATE,
+        field : 'start_time',
+        allowNull : false
+    },
+    end_time : {
+        type : Sequelize.DATE,
+        field : 'end_time',
+        allowNull : true
+    }
+});
+
+module.exports = Events;
 
 
-	},
-
-	{
-	  freezeTableName: true // Model tableName will be the same as the model name
-	});
-module.exports = events;
+/* Python Model
+events = Table('events', metadata,
+	Column('id', BigInteger, primary_key=True),
+	Column('name', String, nullable=False),
+	Column('desc', String),
+	Column('place', String, nullable=False),
+	Column('lat', Numeric, nullable=True),
+	Column('lng', Numeric, nullable=True),
+	Column('start_time', DateTime, nullable=False),
+	Column('end_time', DateTime, nullable=True),
+	Column('timestamp', TIMESTAMP(timezone=True), default=func.now())
+)
+*/

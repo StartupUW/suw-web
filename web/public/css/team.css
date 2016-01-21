@@ -1,9 +1,73 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
-section {
+#splash {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 70px; }
+  @media screen and (max-width: 768px) {
+    #splash #links a {
+      color: white; } }
+  #splash #splash-title {
+    margin-top: 0px; }
+    #splash #splash-title .title {
+      color: white; }
+      #splash #splash-title .title h1 {
+        margin-top: 150px;
+        font-size: 1.75em; }
+        @media screen and (max-width: 768px) {
+          #splash #splash-title .title h1 {
+            margin-top: 120px; } }
+    #splash #splash-title .subtitle {
+      color: white; }
+
+.top h1 {
   text-align: center;
-  padding: 30px 50px; }
-  section h1 {
-    font-weight: 600;
-    font-size: 2.2em; }
-  section img {
-    margin: 30px; }
+  margin: 75px 0;
+  font-weight: 600;
+  font-size: 2em;
+  color: #333; }
+
+.team {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .team img {
+    margin: 10px;
+    width: 80%; }
+  .team a {
+    color: #33ccff;
+    text-decoration: none; }
+    .team a:hover, .team a:visited, .team a:link, .team a:active {
+      color: #33ccff;
+      text-decoration: none;
+      cursor: pointer; }
+  .team h1 {
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 10px;
+    margin: 0px; }
+  .team h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px; }
+  .team p {
+    margin: 5px;
+    padding: 10px;
+    font-size: .85em; }
+  .team .links a {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 1.5em;
+    margin: 0 10px; }
+    .team .links a:hover {
+      color: #33ccff; }
+
+.img-rounded {
+  border-radius: 5px; }
+
+.container {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative; }
