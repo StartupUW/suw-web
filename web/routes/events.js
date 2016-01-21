@@ -10,7 +10,6 @@ module.exports = function(req, res, next) {
       		event.at = moment(event.start_time).format('MMMM Do YYYY, h:mm a');
       		return event;
 	});
-	console.log(data[0]);
 	res.render('events', {  title: 'Events' , events: data });    
       });
 };

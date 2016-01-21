@@ -21,7 +21,7 @@ section {
     width: 80%;
     margin-top: 10px;
     margin-left: 10%; }
-    .events .event .location, .events .event .at {
+    .events .event .at {
       padding-left: 10px; }
     .events .event .name {
       font-weight: 900;
@@ -30,6 +30,10 @@ section {
       padding-bottom: 10px;
       font-size: 30px; }
       .events .event .name:hover {
+        color: #33ccff; }
+    .events .event .location {
+      padding-left: 10px; }
+      .events .event .location:hover {
         color: #33ccff; }
     .events .event .fa {
       margin-right: 7px; }

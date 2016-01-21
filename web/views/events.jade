@@ -24,7 +24,7 @@ mixin event(event)
           span #{event.at}
         .location
           i.fa.fa-map-marker
-          span=  event.place
+          a(href='http://maps.google.com/?q=' + event.lat + ',' + event.lng)=  event.place
         .description
           i.fa.fa-info
           span= event.desc
