@@ -18,9 +18,9 @@ section {
   .events .event {
     background-color: #ffffff;
     margin-bottom: 50px;
-    width: 98%;
+    width: 80%;
     margin-top: 10px;
-    margin-left: 1%; }
+    margin-left: 10%; }
     .events .event .location, .events .event .at {
       padding-left: 10px; }
     .events .event .name {
@@ -34,7 +34,7 @@ section {
     .events .event .fa {
       margin-right: 7px; }
     .events .event .img {
-      margin: 10px; }
+      margin: 20px; }
     .events .event .description {
       margin-top: 10px;
       padding-left: 10px;
