@@ -11,8 +11,8 @@ block splash
     p Showcasing our killer Winter 2016 lineup.
 
 mixin event(event)
-  a(target="_blank" href="https://facebook.com/events/" + event.id)
-    .pure-g.event
+  .pure-g.event
+    a(target="_blank" href="https://facebook.com/events/" + event.id)
       .pure-u-1.pure-u-md-11-24
         .img
           img(src=event.cover, height='100%', width='100%')
@@ -35,7 +35,7 @@ block content
         +event(event)
 
   script.
-    var numb = #{n} - 1;
+    var numEvents = #{events.length} - 1;
     var height = document.getElementsByClassName("event")[0].clientHeight +
               document.getElementsByClassName("event")[1].clientHeight +
               document.getElementsByClassName("event")[2].clientHeight +
@@ -43,17 +43,18 @@ block content
               document.getElementsByClassName("event")[4].clientHeight + 300;
 
     var i = 5;
-    document.getElementById("all-events").style.height = num + "px";
+    document.getElementById("all-events").style.height = height + "px";
     document.addEventListener('scroll', function (event) {
-    if (document.body.scrollHeight == document.body.scrollTop + window.innerHeight &&
-        document.getElementById("all-events").clientHeight <= numb * (document.getElementsByClassName("event")[0].clientHeight + 50)) {
+      if (document.body.scrollHeight == document.body.scrollTop + window.innerHeight &&
+          document.getElementById("all-events").clientHeight <= numEvents * (document.getElementsByClassName("event")[0].clientHeight + 50)) {
 
-      height = (document.getElementsByClassName("event")[i].clientHeight +
-            document.getElementsByClassName("event")[i+1].clientHeight +
-            document.getElementsByClassName("event")[i+2].clientHeight +
-            document.getElementsByClassName("event")[i+3].clientHeight +
-            document.getElementsByClassName("event")[i+4].clientHeight) * 3 + 1000;
+        height = (document.getElementsByClassName("event")[i].clientHeight +
+              document.getElementsByClassName("event")[i+1].clientHeight +
+              document.getElementsByClassName("event")[i+2].clientHeight +
+              document.getElementsByClassName("event")[i+3].clientHeight +
+              document.getElementsByClassName("event")[i+4].clientHeight) * 3 + 1000;
 
-      document.getElementById("all-events").style.height = document.getElementById("all-events").clientHeight + height + "px"
-      i += 5;
-    }
+        document.getElementById("all-events").style.height = document.getElementById("all-events").clientHeight + height + "px"
+        i += 5;
+      }
+    });

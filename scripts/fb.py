@@ -95,7 +95,7 @@ def main():
 	token = get_token()
 	data = get_fb_data(token)
 	data = parse_fb_data(data)
-	engine, conn = connect_db('suw_test')
+	engine, conn = connect_db('suw')
 	events = get_events_schema()
 	flush_events_table(conn, engine, events)
 	fill_events_table(conn,  events, data)
