@@ -1,6 +1,6 @@
 // Events Page
+
 var moment = require('moment');
-var events = require('../models/events');
 var db = require('./database.js');
 
 module.exports = function(req, res, next) {
