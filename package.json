@@ -1,10 +1,10 @@
 {
   "name": "web",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "gulp sass; node ./bin/www",
-    "test": "mocha -t 5s"
+    "test": "python scripts/test/populate_db.py; mocha -t 5s"
   },
   "dependencies": {
     "body-parser": "~1.13.2",

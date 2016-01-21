@@ -4,15 +4,14 @@ node_js:
   - 0.11
 
 env:
-  - PG_USER=postgres
-  - PG_PASSWORD=
+  - PG_USER=postgres PG_DATABASE=suw_test PG_PASSWORD=
 
-before_install:
-  - cd web/
+install:
+  - pip install -r requirements.txt
+  - npm install
 
 before_script:
-  - psql -c 'create database suw;' -U postgres
-  - python ../scripts/test/populate_db.py
+  - psql -c 'create database suw_test;' -U postgres
 
 script:
   - npm test
