@@ -3,9 +3,6 @@ language: python
 python:
   - "2.7"
 
-env:
-  - AWS_S3_KEY=test_key AWS_S3_SECRET=test_secret
-
 before_install:
   - cd scripts/
 
