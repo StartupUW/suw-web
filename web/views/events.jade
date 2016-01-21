@@ -38,15 +38,19 @@ block content
   script.
     var numb= #{n} - 1
     console.log(document.getElementById("all-events").clientHeight);
-    var num=document.getElementsByClassName("event")[0].clientHeight + 50;
+    var num = document.getElementsByClassName("event")[0].clientHeight + document.getElementsByClassName("event")[1].clientHeight + document.getElementsByClassName("event")[2].clientHeight+document.getElementsByClassName("event")[3].clientHeight + document.getElementsByClassName("event")[4].clientHeight
+    num = num+ 60*5;
+    var i = 5;
     document.getElementById("all-events").style.height = num + "px"
     document.addEventListener('scroll', function (event) {
-        if (document.body.scrollHeight == 
-            document.body.scrollTop +        
-            window.innerHeight &&  document.getElementById("all-events").clientHeight <= numb*(document.getElementsByClassName("event")[0].clientHeight + 50)) {
-            var num=document.getElementsByClassName("event")[0].clientHeight + 50;
-            document.getElementById("all-events").style.height = document.getElementById("all-events").clientHeight + num + "px"
-        }
+    if (document.body.scrollHeight == 
+      document.body.scrollTop +        
+      window.innerHeight &&  document.getElementById("all-events").clientHeight <= numb*(document.getElementsByClassName("event")[0].clientHeight + 50)) {
+      num = document.getElementsByClassName("event")[i].clientHeight + document.getElementsByClassName("event")[i+1].clientHeight + document.getElementsByClassName("event")[i+2].clientHeight+document.getElementsByClassName("event")[i+3].clientHeight + document.getElementsByClassName("event")[i+4].clientHeight
+      num = num*3 + 100*10;
+      document.getElementById("all-events").style.height = document.getElementById("all-events").clientHeight + num + "px"
+      i = i+5;
+    }
     });
 
 

@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('postgres://postgres:postgres@localhost:5432/suw'); // Change this part
+var sequelize = new Sequelize('postgres://postgres:asdfasdf@localhost:5432/suw'); // Change this part
 
 var User = sequelize.define('events', {
     id: {
@@ -16,6 +16,11 @@ var User = sequelize.define('events', {
         type: Sequelize.STRING,
         field: 'desc',
         allowNull: true
+    },
+    cover: {
+    	type: Sequelize.STRING,
+	field: 'cover',
+	allowNull: true
     },
     place : {
         type : Sequelize.STRING,
@@ -44,7 +49,7 @@ var User = sequelize.define('events', {
     }
 });
 
-module.exports = Events;
+//module.exports = Events;
 
 
 /* Python Model

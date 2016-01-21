@@ -12,13 +12,13 @@ block splash
 
 mixin event(event)
   .event
-    p.name= event.name
+    a(href='https://facebook.com/events/' + event.id).name=event.name
     .at
       i.fa.fa-clock-o
       span #{event.at} #{event.date}
     .location
       i.fa.fa-map-marker
-      span= event.location
+      span= event.place
 
 block content
 
@@ -46,7 +46,7 @@ block content
 
     if events
       #upcoming-events.events
-        h2 Upcoming Events
+        h2 Latest Events
         each event in events
           +event(event)
 
