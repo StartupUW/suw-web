@@ -14,7 +14,7 @@ def get_token():
 # Gets the access token from the facebook server
 # Get the data from the facebook api
 def get_fb_data(token):
-	url = 'https://graph.facebook.com/StartupUW/events?access_token=' + token
+	url = 'https://graph.facebook.com/StartupUW/events?fields=cover,name,description,start_time,end_time,place&access_token=' + token
 	data = []
 	while(url != None):
 		r = requests.get(url)
@@ -36,8 +36,12 @@ def parse_fb_data(data):
 			'start_time' : event['start_time'],
 			'end_time' : None,
 			'lat' : None,
-			'lng' : None
+			'lng' : None,
+			'cover' : None
 		}
+		if('cover' in event):
+			if('source' in event['cover']):
+				event_data['cover'] = event['cover']['source']
 		if('end_time' in event):
 			event_data['end_time'] = event['end_time']	
 		if('place' in event):
@@ -67,6 +71,7 @@ def get_events_schema():
 		Column('lng', Numeric, nullable=True),
 		Column('start_time', DateTime, nullable=False),
 		Column('end_time', DateTime, nullable=True),
+		Column('cover', String, nullable=True),
 		Column('timestamp', TIMESTAMP(timezone=True), default=func.now())
 	)
 	return events
@@ -84,7 +89,7 @@ def main():
 	token = get_token()
 	data = get_fb_data(token)
 	data = parse_fb_data(data)
-	engine, conn = connect_db('suwtesting')
+	engine, conn = connect_db('suw')
 	events = get_events_schema()
 	flush_events_table(conn, engine, events)
 	fill_events_table(conn,  events, data)
