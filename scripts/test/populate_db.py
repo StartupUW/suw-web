@@ -39,7 +39,7 @@ def fill_events_table(conn, events, data):
 	conn.execute(events.insert(), data)
 
 def main():
-	engine, conn = connect_db('suw')
+	engine, conn = connect_db('suw_test')
 	events = get_events_schema()
 	flush_events_table(conn, engine, events)
 	mock_event = {

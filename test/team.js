@@ -26,7 +26,6 @@ describe('Team view', function() {
         .expect(/\/img\/daniel.jpg/)
         .expect(/\/img\/ayush.jpg/)
         .expect(/\/img\/mike.jpg/)
-        .expect(/\/img\/krish.jpg/)
         .end(done);
 	});
 
@@ -46,7 +45,6 @@ describe('Team view', function() {
 		  .expect(/Daniel Ho/)
 		  .expect(/Ayush Saraf/)
 		  .expect(/Mike Guevarra/)
-		  .expect(/Krishang Swami/)
 		  .end(done);
 	});
 });
