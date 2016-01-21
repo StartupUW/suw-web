@@ -12,7 +12,7 @@ block splash
 
 mixin event(event)
   .event
-    a(href='https://facebook.com/events/' + event.id).name=event.name
+    a.name(target="_blank" href="https://facebook.com/events/" + event.id)=event.name
     .at
       i.fa.fa-clock-o
       span #{event.at} #{event.date}

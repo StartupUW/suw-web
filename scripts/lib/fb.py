@@ -1,20 +1,26 @@
-# IMPORTS
+import os
 import requests
 import sqlalchemy
 from sqlalchemy import *
 
-# APP CONSTANTS
-CLIENT_ID = '912240588829356'
-CLIENT_SECRET = 'cf8d4abe8b14cdc7d03f1a23f9abcbe6'
+PG_USER = os.environ['PG_USER']
+PG_PASSWORD = os.environ['PG_PASSWORD']
+
+CLIENT_ID = os.environ['FB_CLIENT_ID']
+CLIENT_SECRET = os.environ['FB_CLIENT_SECRET']
+
+FB_EVENTS_URL = 'https://graph.facebook.com/StartupUW/events?'
+FB_GRAPH_URL = 'https://graph.facebook.com/oauth/access_token?'
 
 def get_token():
-	r = requests.get('https://graph.facebook.com/oauth/access_token?client_id=' + CLIENT_ID + '&client_secret=' + CLIENT_SECRET + '&grant_type=client_credentials')
+	r = requests.get(FB_GRAPH_URL + 'client_id=' + CLIENT_ID + '&client_secret=' + CLIENT_SECRET + '&grant_type=client_credentials')
 	return r.text.split('=')[1]
 
 # Gets the access token from the facebook server
 # Get the data from the facebook api
 def get_fb_data(token):
-	url = 'https://graph.facebook.com/StartupUW/events?fields=cover,name,description,start_time,end_time,place&access_token=' + token
+	fields = ['cover', 'name', 'description', 'start_time', 'end_time', 'place']
+	url = FB_EVENTS_URL + 'fields=' + ','.join(fields) + '&access_token=' + token
 	data = []
 	while(url != None):
 		r = requests.get(url)
@@ -43,7 +49,7 @@ def parse_fb_data(data):
 			if('source' in event['cover']):
 				event_data['cover'] = event['cover']['source']
 		if('end_time' in event):
-			event_data['end_time'] = event['end_time']	
+			event_data['end_time'] = event['end_time']
 		if('place' in event):
 			if('location' in event['place']):
 				event_data['lat'] = event['place']['location']['latitude']
@@ -55,7 +61,7 @@ def parse_fb_data(data):
 
 # Start a connection
 def connect_db(dbname):
-	engine = create_engine('postgresql+psycopg2://postgres:asdfasdf@localhost/' + dbname)
+	engine = create_engine('postgresql+psycopg2://' + PG_USER + ':' + PG_PASSWORD + '@localhost/' + dbname)
 	conn = engine.connect()
 	return engine, conn
 
@@ -96,4 +102,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
