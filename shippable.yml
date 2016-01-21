@@ -10,6 +10,10 @@ env:
 before_install:
   - cd web/
 
+install:
+  - pip install -r ../scripts/requirements.txt
+  - npm install
+
 before_script:
   - psql -c 'create database suw;' -U postgres
   - python ../scripts/test/populate_db.py
