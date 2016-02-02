@@ -37,7 +37,7 @@ function checkGoogleAnalytics(endpoint) {
       .get(endpoint)
       .expect(200)
       .expect(/google-analytics.com/)
-      .expect(/UA-63602133-1/)
+      .expect(/UA-53889740-1/)
       .end(done);
   });
 }
