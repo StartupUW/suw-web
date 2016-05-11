@@ -34,27 +34,3 @@ block content
       each event in events
         +event(event)
 
-  script.
-    var numEvents = #{events.length} - 1;
-    var height = document.getElementsByClassName("event")[0].clientHeight +
-              document.getElementsByClassName("event")[1].clientHeight +
-              document.getElementsByClassName("event")[2].clientHeight +
-              document.getElementsByClassName("event")[3].clientHeight +
-              document.getElementsByClassName("event")[4].clientHeight + 300;
-
-    var i = 5;
-    document.getElementById("all-events").style.height = height + "px";
-    document.addEventListener('scroll', function (event) {
-      if (document.body.scrollHeight == document.body.scrollTop + window.innerHeight &&
-          document.getElementById("all-events").clientHeight <= numEvents * (document.getElementsByClassName("event")[0].clientHeight + 50)) {
-
-        height = (document.getElementsByClassName("event")[i].clientHeight +
-              document.getElementsByClassName("event")[i+1].clientHeight +
-              document.getElementsByClassName("event")[i+2].clientHeight +
-              document.getElementsByClassName("event")[i+3].clientHeight +
-              document.getElementsByClassName("event")[i+4].clientHeight) * 3 + 1000;
-
-        document.getElementById("all-events").style.height = document.getElementById("all-events").clientHeight + height + "px"
-        i += 5;
-      }
-    });
