@@ -41,6 +41,10 @@ section
   margin: 80px auto 0 auto
   text-align: center
 
+  @media screen and (max-width: $mobile-screen)
+    min-width: 0
+    width: 90%
+
   .event
     margin-bottom: 50px
     margin-top: 10px
@@ -66,6 +70,9 @@ section
     img
       margin-top: 15px
       width: 90%
+      
+      @media screen and (max-width: $mobile-screen)
+        width: 100%
 
     .description
       margin-top: 10px

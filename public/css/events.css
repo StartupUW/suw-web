@@ -32,6 +32,10 @@ section {
   width: 60%;
   margin: 80px auto 0 auto;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    #all-events {
+      min-width: 0;
+      width: 90%; } }
   #all-events .event {
     margin-bottom: 50px;
     margin-top: 10px;
@@ -52,6 +56,9 @@ section {
     #all-events .event img {
       margin-top: 15px;
       width: 90%; }
+      @media screen and (max-width: 768px) {
+        #all-events .event img {
+          width: 100%; } }
     #all-events .event .description {
       margin-top: 10px;
       font-size: .85em; }
