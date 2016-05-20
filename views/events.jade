@@ -4,57 +4,40 @@ block css
   != CDN('/css/events.css')
 
 block splash
-    if total > 0
-      .title
-        h1= title.toUpperCase()
-      .subtitle
-        p Showcasing our killer Spring 2016 lineup.
-    else
-      .title 
-        h1="Invalid Page Index"
-
+  .title
+    h1= title.toUpperCase()
+  .subtitle
+    p Showcasing our killer Spring 2016 lineup.
 
 mixin event(event)
-  .pure-g.event
-    a(target="_blank" href="https://facebook.com/events/" + event.id)
-      .pure-u-1.pure-u-md-11-24
-        .img
-          img(src=event.cover, height='100%', width='100%')
-      .pure-u-1.pure-u-md-13-24
-        .name=event.name
-        .at
-          i.fa.fa-clock-o
-          span #{event.at}
-        .location
-          i.fa.fa-map-marker
-          span=  event.place
-        .description
-          i.fa.fa-info
-          span= event.desc
+  .event.pure-g
+    .cover.pure-u-1.pure-u-md-1-2
+      a(target="_blank" href="https://facebook.com/events/" + event.id)
+        img(src=event.cover, height='100%', width='100%')
+
+    .info.pure-u-1.pure-u-md-1-2
+      a(target="_blank" href="https://facebook.com/events/" + event.id)
+        .name= event.name
+      .at= event.at
+      if event.place
+        .location= '@ ' + event.place
+      .description= event.desc.split(/\s+/).slice(0,40).join(" ") + '...'
 
 block content
-  if total > 0
-    - var next = page + 1
-    - var prev = page - 1
-    - var first = page - 1
-    - var second = page
-    - var third = page + 1
-    if events
-      #all-events
-        each event in events
-          +event(event)
-    .pagination.text-center
-      ul.pagination
-        if page > 1
-          li
-            a(href="/events/" + prev) «
-          li
-            a(href="/events/" + first) #{first}
-        li
-          a.active(href="/events/" + second) #{second}
-        if total > 5
-          li
-            a(href="/events/" + third) #{third}
-          li
-            a(href="/events/" + next) »
+  if events
+    #all-events
+      each event in events
+        +event(event)
 
+    - var numPages = (numEvents / PAGE_LIMIT) + 1;
+    ul.pagination
+      if page > 1
+        li: a(href="/events/" + (page - 1))
+          i.fa.fa-angle-left(aria-hidden="true")
+      - var i = 1;
+      while i <= Math.min(page + 3, numPages)
+        li: a(class=(i == page) ? 'active' : '' href="/events/" + i)= i
+        - i++;
+      if numPages > page + 1
+        li: a(href="/events/" + (page + 1))
+          i.fa.fa-angle-right(aria-hidden="true")

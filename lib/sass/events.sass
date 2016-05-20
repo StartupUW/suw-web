@@ -36,49 +36,56 @@ section
     font-size: 2.2em
 
 #all-events
-  width: 100%
-  margin: 80px auto
-  overflow: hidden
-  display: inline-block
+  min-width: 600px
+  width: 60%
+  margin: 80px auto 0 auto
+  text-align: center
 
   .event
     margin-bottom: 50px
-    width: 80%
     margin-top: 10px
-    margin-left: 10%
+    text-align: left
+
+    .name, .description
+      padding-right: 25px
+
     .location, .at
-      padding-left: 10px
+      font-size: .8em
+      font-weight: 400
+      margin-bottom: 3px
+
     .name
-      font-weight: 900
+      font-weight: 800
       margin-top: 10px
-      padding-left: 4px
       padding-bottom: 10px
-      font-size: 30px
+      font-size: 1.1em
+
       &:hover
          color: $suw
-    .fa
-      margin-right: 7px
-    .img
-      padding: 20px
+
+    img
+      margin-top: 15px
+      width: 90%
+
     .description
       margin-top: 10px
-      padding-left: 10px
-      padding-right: 10px
+      font-size: .85em
 
 .pagination
   text-align: center
   padding: 0
-  
-ul.pagination
-  display: inline-block
+  margin-bottom: 40px
+
   li
-    display: inline
+    display: inline-block
+    margin: 0 8px
+    text-decoration: none
     a
-      color: black
-      padding: 8px 16px
-      text-decoration: none
       transition: background-color .3s
-      &.active 
-        color: $suw
-      &:hover:not(.active)
-        color: #ddd
+      color: #333
+
+    a.active
+      font-weight: 800
+
+    a:hover
+      font-weight: 600
