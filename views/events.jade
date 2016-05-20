@@ -29,8 +29,17 @@ mixin event(event)
           span= event.desc
 
 block content
+  - var next = page+1
+  - var prev = [age-1]
   if events
     #all-events
       each event in events
         +event(event)
+  ul.pager
+    li.previous
+      a(href="/events/" + next) next
+    li.next
+      a(href="/events/" + prev) prev
+
+
 
