@@ -4,11 +4,19 @@ block css
   != CDN('/css/home.css')
 
 block splash
-  .title
-    h1 STARTUP UW
+  #barktank
+    .pure-g
 
-  .subtitle
-    p build skills &bull; meet people &bull; make things
+      .promo.pure-u-1.pure-u-md-2-3
+        .subtitle presenting
+        .title BARK TANK 2016
+
+        .links
+          a.link.eventbrite(target="_blank" href="https://www.eventbrite.com/e/bark-tank-2016-tickets-24713179786") RSVP
+          a.link.facebook(target="_blank" href="https://www.facebook.com/events/883664785096279/") More Info
+
+      .pure-u-1.pure-u-md-1-3
+        iframe.video(width="100%" height="315" src="https://www.youtube.com/embed/-WsHkhpfVhI" frameborder="0" allowfullscreen) Play
 
 mixin event(event)
   .event
