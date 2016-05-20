@@ -29,7 +29,7 @@ block content
       each event in events
         +event(event)
 
-    - var numPages = (numEvents / PAGE_LIMIT) + 1;
+    - var numPages = Math.ceil(numEvents / PAGE_LIMIT);
     ul.pagination
       if page > 1
         li: a(href="/events/" + (page - 1))
@@ -38,6 +38,6 @@ block content
       while i <= Math.min(page + 3, numPages)
         li: a(class=(i == page) ? 'active' : '' href="/events/" + i)= i
         - i++;
-      if numPages > page + 1
+      if page < numPages
         li: a(href="/events/" + (page + 1))
           i.fa.fa-angle-right(aria-hidden="true")

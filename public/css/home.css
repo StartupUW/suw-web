@@ -17,41 +17,6 @@
     .events .event .fa {
       margin-right: 7px; }
 
-#barktank .promo {
-  margin-top: 25px; }
-
-#barktank .subtitle {
-  color: #333;
-  font-size: .2em; }
-
-#barktank .title {
-  color: #333;
-  letter-spacing: .1em;
-  height: 150px; }
-
-#barktank .links {
-  height: 100px; }
-  #barktank .links .link {
-    padding: 15px 30px;
-    border-radius: 2px;
-    margin: 10px;
-    font-size: 1em; }
-  #barktank .links .facebook {
-    background-color: white;
-    border: 1px solid;
-    border-color: #c4c4c4;
-    color: #565a5c; }
-    #barktank .links .facebook:hover {
-      border-color: #aaa; }
-  #barktank .links .eventbrite {
-    background-color: #ff5a5f;
-    color: white; }
-    #barktank .links .eventbrite:hover {
-      background-color: #ff7e82; }
-
-#barktank .video {
-  height: 325px; }
-
 #mission img {
   margin-top: 35px; }
 

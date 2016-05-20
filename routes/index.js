@@ -9,6 +9,6 @@ var EventsPage = require('./events');
 
 router.get('/', HomePage);
 router.get('/team', TeamPage);
-router.get('/events/:page((\\d+))', EventsPage);
+router.get('/events(/:page((\\d+)))?', EventsPage);
 
 module.exports = router;
