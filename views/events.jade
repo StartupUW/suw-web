@@ -40,17 +40,18 @@ block content
         +event(event)
   .pagination.text-center
     ul.pagination
-      if page > 1
+      if total > 0
+        if page > 1
+          li
+            a(href="/events/" + prev) «
+          li
+            a(href="/events/" + first) #{first}
         li
-          a(href="/events/" + prev) «
-        li
-          a(href="/events/" + first) #{first}
-      li
-        a.active(href="/events/" + second) #{second}
-      if total > 5
-        li
-          a(href="/events/" + third) #{third}
-        li
-          a(href="/events/" + next) »
+          a.active(href="/events/" + second) #{second}
+        if total > 5
+          li
+            a(href="/events/" + third) #{third}
+          li
+            a(href="/events/" + next) »
 
 
