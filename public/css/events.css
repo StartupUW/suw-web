@@ -55,3 +55,21 @@ section {
       margin-top: 10px;
       padding-left: 10px;
       padding-right: 10px; }
+
+.pagination {
+  text-align: center;
+  padding: 0; }
+
+ul.pagination {
+  display: inline-block; }
+  ul.pagination li {
+    display: inline; }
+    ul.pagination li a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s; }
+      ul.pagination li a.active {
+        color: #33ccff; }
+      ul.pagination li a:hover:not(.active) {
+        color: #ddd; }

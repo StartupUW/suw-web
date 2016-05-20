@@ -64,3 +64,21 @@ section
       margin-top: 10px
       padding-left: 10px
       padding-right: 10px
+
+.pagination
+  text-align: center
+  padding: 0
+  
+ul.pagination
+  display: inline-block
+  li
+    display: inline
+    a
+      color: black
+      padding: 8px 16px
+      text-decoration: none
+      transition: background-color .3s
+      &.active 
+        color: $suw
+      &:hover:not(.active)
+        color: #ddd
