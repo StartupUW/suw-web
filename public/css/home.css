@@ -3,6 +3,8 @@
   width: 100%;
   max-width: 500px;
   display: inline-block; }
+  .events h2 {
+    margin-bottom: 40px; }
   .events .event {
     border-left: 7px solid #33ccff;
     padding: 0 30px;
