@@ -4,11 +4,15 @@ block css
   != CDN('/css/events.css')
 
 block splash
-  .title
-    h1= title.toUpperCase()
+    if total > 0
+      .title
+        h1= title.toUpperCase()
+      .subtitle
+        p Showcasing our killer Spring 2016 lineup.
+    else
+      .title 
+        h1="Invalid Page Index"
 
-  .subtitle
-    p Showcasing our killer Spring 2016 lineup.
 
 mixin event(event)
   .pure-g.event
@@ -29,18 +33,18 @@ mixin event(event)
           span= event.desc
 
 block content
-  - var next = page + 1
-  - var prev = page - 1
-  - var first = page - 1
-  - var second = page
-  - var third = page + 1
-  if events
-    #all-events
-      each event in events
-        +event(event)
-  .pagination.text-center
-    ul.pagination
-      if total > 0
+  if total > 0
+    - var next = page + 1
+    - var prev = page - 1
+    - var first = page - 1
+    - var second = page
+    - var third = page + 1
+    if events
+      #all-events
+        each event in events
+          +event(event)
+    .pagination.text-center
+      ul.pagination
         if page > 1
           li
             a(href="/events/" + prev) «
@@ -53,5 +57,4 @@ block content
             a(href="/events/" + third) #{third}
           li
             a(href="/events/" + next) »
-
 
