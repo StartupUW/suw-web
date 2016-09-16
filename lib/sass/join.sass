@@ -1,0 +1,32 @@
+@import _variables
+
+#splash
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/img/default.jpeg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center $header-height + 10;
+
+  #links
+    @media screen and (max-width: $mobile-screen)
+      a
+        color: white
+
+  #splash-title
+    margin-top: 0px
+
+    .title
+      color: white
+
+      h1
+        margin-top: 150px
+        font-size: 1.75em
+
+        @media screen and (max-width: $mobile-screen)
+          margin-top: 120px
+
+    .subtitle
+      color: white
+
+#about
+    p
+      font-size: 1.25em
