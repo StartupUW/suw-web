@@ -37,7 +37,7 @@ def parse_fb_data(data):
 		event_data = {
 			'id' : event['id'],
 			'name' : event['name'],
-			'desc' : event['description'],
+			'desc' : None,
 			'place' : None,
 			'start_time' : event['start_time'],
 			'end_time' : None,
@@ -45,6 +45,8 @@ def parse_fb_data(data):
 			'lng' : None,
 			'cover' : None
 		}
+		if('description' in event):
+			event_data['desc'] = event['description']
 		if('cover' in event):
 			if('source' in event['cover']):
 				event_data['cover'] = event['cover']['source']
