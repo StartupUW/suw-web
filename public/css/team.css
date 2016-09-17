@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 #splash {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/team.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/team2k16.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 70px; }
+  background-position: center 140px; }
   @media screen and (max-width: 768px) {
     #splash #links a {
       color: white; } }
@@ -33,7 +33,8 @@
   text-align: center; }
   .team img {
     margin: 10px;
-    width: 80%; }
+    width: 80%;
+    height: 100%; }
   .team a {
     color: #33ccff;
     text-decoration: none; }
