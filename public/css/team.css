@@ -27,6 +27,13 @@
   font-size: 2em;
   color: #333; }
 
+.bottom h1 {
+  text-align: center;
+  margin: 75px 0;
+  font-weight: 600;
+  font-size: 2em;
+  color: #333; }
+
 .team {
   padding-top: 0px;
   padding-bottom: 30px;
@@ -72,3 +79,20 @@
   margin: 0 auto;
   padding: 10px;
   position: relative; }
+  .container #joinus p {
+    font-size: 1.25em; }
+  .container #joinus div.input {
+    padding: .5em; }
+  .container #joinus div.span {
+    padding-right: .1em; }
+  .container #joinus input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box; }
+  .container #joinus h1 {
+    text-align: center;
+    margin: 75px 0;
+    font-weight: 600;
+    font-size: 2em;
+    color: #333; }

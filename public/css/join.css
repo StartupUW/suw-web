@@ -22,3 +22,15 @@
 
 #about p {
   font-size: 1.25em; }
+
+#about div.input {
+  padding: .5em; }
+
+#about div.span {
+  padding-right: .1em; }
+
+#about input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  box-sizing: border-box; }
