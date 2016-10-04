@@ -1,10 +1,10 @@
 @import _variables
 
 #splash
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/img/team.jpg")
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/img/team2k16.jpg")
   background-repeat: no-repeat
   background-size: cover
-  background-position: center $header-height + 10;
+  background-position: center $header-height + 80;
 
   #links
     @media screen and (max-width: $mobile-screen)
@@ -35,6 +35,14 @@
     font-size: 2em
     color: $title-color
 
+.bottom
+  h1
+    text-align: center
+    margin: 75px 0
+    font-weight: 600
+    font-size: 2em
+    color: $title-color
+
 .team
   padding-top: 0px
   padding-bottom: 30px
@@ -43,6 +51,7 @@
   img
     margin: 10px
     width: 80%
+    height: 100%
 
   a
     color: $suw
@@ -84,7 +93,27 @@
 
 .container
   max-width: 1000px
-  height: auto;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
+  height: auto
+  margin: 0 auto
+  padding: 10px
+  position: relative
+
+  #joinus
+    p
+      font-size: 1.25em
+    div.input
+      padding: .5em
+    div.span
+      padding-right: .1em
+
+    input[type=text]
+      width: 100%
+      padding: 12px 20px
+      margin: 8px 0px
+      box-sizing: border-box
+    h1
+      text-align: center
+      margin: 75px 0
+      font-weight: 600
+      font-size: 2em
+      color: $title-color

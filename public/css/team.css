@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 #splash {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/team.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/team2k16.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 70px; }
+  background-position: center 140px; }
   @media screen and (max-width: 768px) {
     #splash #links a {
       color: white; } }
@@ -27,13 +27,21 @@
   font-size: 2em;
   color: #333; }
 
+.bottom h1 {
+  text-align: center;
+  margin: 75px 0;
+  font-weight: 600;
+  font-size: 2em;
+  color: #333; }
+
 .team {
   padding-top: 0px;
   padding-bottom: 30px;
   text-align: center; }
   .team img {
     margin: 10px;
-    width: 80%; }
+    width: 80%;
+    height: 100%; }
   .team a {
     color: #33ccff;
     text-decoration: none; }
@@ -71,3 +79,20 @@
   margin: 0 auto;
   padding: 10px;
   position: relative; }
+  .container #joinus p {
+    font-size: 1.25em; }
+  .container #joinus div.input {
+    padding: .5em; }
+  .container #joinus div.span {
+    padding-right: .1em; }
+  .container #joinus input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box; }
+  .container #joinus h1 {
+    text-align: center;
+    margin: 75px 0;
+    font-weight: 600;
+    font-size: 2em;
+    color: #333; }

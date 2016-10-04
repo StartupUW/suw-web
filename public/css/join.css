@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
+#splash {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/default.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 70px; }
+  @media screen and (max-width: 768px) {
+    #splash #links a {
+      color: white; } }
+  #splash #splash-title {
+    margin-top: 0px; }
+    #splash #splash-title .title {
+      color: white; }
+      #splash #splash-title .title h1 {
+        margin-top: 150px;
+        font-size: 1.75em; }
+        @media screen and (max-width: 768px) {
+          #splash #splash-title .title h1 {
+            margin-top: 120px; } }
+    #splash #splash-title .subtitle {
+      color: white; }
+
+#about p {
+  font-size: 1.25em; }
+
+#about div.input {
+  padding: .5em; }
+
+#about div.span {
+  padding-right: .1em; }
+
+#about input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  box-sizing: border-box; }
