@@ -20,11 +20,11 @@ mixin event(event)
         .name= event.name
       .at= event.at
       if event.place
-        .location= '@ ' + event.place
-      .description= if codeevent.desc 
-        codeevent.desc.split(/\s+/).slice(0,40).join(" ") + '...'
+        .location= '@ ' + event.place 
+      if (event.desc != null)  
+        .description= event.desc.split(/\s+/).slice(0,40).join(" ") + '...'
       else
-        ""
+        .description= ''
 
 block content
   if events
