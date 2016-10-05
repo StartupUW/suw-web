@@ -22,9 +22,16 @@
 
 .top h1 {
   text-align: center;
-  margin: 75px 0;
+  margin: 35px 0;
   font-weight: 600;
   font-size: 2em;
+  color: #333; }
+
+.top h3 {
+  text-align: center;
+  margin: 25px 0;
+  font-weight: 600;
+  font-size: 1.25em;
   color: #333; }
 
 .bottom h1 {
@@ -95,4 +102,10 @@
     margin: 75px 0;
     font-weight: 600;
     font-size: 2em;
+    color: #333; }
+  .container #joinus h3 {
+    text-align: center;
+    margin: 25px 0;
+    font-weight: 600;
+    font-size: 1.25em;
     color: #333; }

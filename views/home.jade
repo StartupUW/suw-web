@@ -10,47 +10,20 @@ block splash
   .subtitle
     p build skills &bull; meet people &bull; make things
 
-mixin event(event)
-  .event
-    a.name(target="_blank" href="https://facebook.com/events/" + event.id)=event.name
-    .at
-      i.fa.fa-clock-o
-      span #{event.at} #{event.date}
-    .location
-      i.fa.fa-map-marker
-      span= event.place
-
 block content
 
   section#about
-    h1 A student community driven by startup culture
+    h1 Meet your co-founder
 
     p Startup UW is the University of Washington's largest student organization dedicated to entrepreneurship across all industries and disciplines.
-
-
-  section#mission
-    h1 A mission to inspire others and lead change
 
     p We believe innovation in the Pacific Northwest starts here. Our goal is to equip students with the resources, connections, and skills they need to kickstart their next impactful enterprise.
 
     p We believe we can help make Seattle and the UW an even better place for startups to thrive.
+    
+    h1 Sound like your kinda place? Click <a href="/join">here</a> for more info. 
 
     != CDN('/img/home-1.jpg', { 'width': '100%' })
-
-  section#event-overview
-    h1 Attend our upcoming events
-
-    p It's no secret we hold some killer events. We've hosted startup luminaries like Alexis Ohanian and Rand Fishkin. We hold dinners with founders, pitch nights, workshops, and more.
-
-    p Check out what we have lined up for you!
-
-    if events
-      #upcoming-events.events
-        h2 Latest Events
-        each event in events
-          +event(event)
-
-    p: a.button.large(href="/events") View All Events
 
   section#launch-overview
     h1 Showcase your projects with Launch
@@ -66,7 +39,3 @@ block content
         p Try out the Launch beta and show the UW community what you've been working on.
 
         p: a.button.large(target="_blank" href="#{LAUNCH_URL}") Visit Launch
-
-  section#newsletter
-    h1 Keep up to date with Startup UW
-    a.button.large(target="_blank" href='#{NEWSLETTER_URL}') Subscribe To Our Newsletter
