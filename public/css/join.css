@@ -34,3 +34,18 @@
   padding: 12px 20px;
   margin: 8px 0px;
   box-sizing: border-box; }
+
+#join p {
+  font-size: 1.25em; }
+
+#join div.input {
+  padding: .5em; }
+
+#join div.span {
+  padding-right: .1em; }
+
+#join input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  box-sizing: border-box; }
