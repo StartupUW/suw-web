@@ -1,4 +1,4 @@
-Startup UW Website Redesign
+Startup UW Website
 ==================
 
 ## Overview
