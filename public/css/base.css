@@ -12,12 +12,12 @@ a:visited, a:link, a:active, a:hover {
 
 #splash {
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   font-family: "Helvetica Neue", sans-serif;
   color: #333;
   text-align: center;
   background-size: cover; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     #splash {
       min-height: 450px; } }
   #splash #header {
@@ -29,7 +29,7 @@ a:visited, a:link, a:active, a:hover {
       float: left;
       margin-left: 40px;
       display: inline-block; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1000px) {
         #splash #header #logo {
           margin-left: 0;
           float: none; } }
@@ -46,21 +46,19 @@ a:visited, a:link, a:active, a:hover {
       float: right;
       margin-right: 40px;
       padding: 0; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1000px) {
         #splash #header #links {
           margin-right: 0;
           float: none; } }
       #splash #header #links li {
         text-decoration: none;
         display: inline-block;
-        margin: 15px; }
-  #splash #splash-title {
-    margin-top: 100px;
-    padding: 10px; }
+        margin: 15px 9px 15px 9px; }
+  #splash #splash-title {}
     #splash #splash-title .title {
       letter-spacing: .15em;
       font-size: 3em; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1000px) {
         #splash #splash-title .title {
           font-size: 1.5em; } }
     #splash #splash-title .subtitle {
@@ -68,7 +66,7 @@ a:visited, a:link, a:active, a:hover {
       line-height: 2.5em;
       font-size: 1.5em;
       color: rgba(0, 0, 0, 0.65); }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1000px) {
         #splash #splash-title .subtitle {
           font-size: 1.1em; } }
 
@@ -111,8 +109,49 @@ section {
   .button.small {
     font-size: 0.7em;
     padding: 5px 10px; }
+  .button.blue {
+    background-color: #3D95CE;
+    color: white; }
+
+@media screen and (max-width: 1458px) {
+  #footerimage {
+      background-size: cover;
+  }
+}
+
+#footerimage {
+  background-image: url("/img/footer/footer-01.svg"), url("/img/footer/footer-02.svg");
+  background-repeat: no-repeat, repeat-x;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 1458px) {
+  #footerimage {
+      background-image: url("/img/footer/footer-02.svg");
+  }
+}
+
+#footersponsor a {
+  color : #c4c4c4;
+}
+
+#footersponsor {
+    background-color: #30393e;
+    color: white;
+    position: relative;
+    top:430px;
+    font-size: 0.95em;
+    text-align: center;
+    padding: 5px;
+}
 
 #footer {
+  display: block;
+  position: relative;
+  top:455px;
   font-size: 0.95em;
   width: 100%;
   height: 50px;
@@ -130,3 +169,75 @@ section {
       margin: 15px; }
     #footer a:hover {
       color: #aaaaaa; }
+
+.horiz-center {
+    text-align: center;
+}
+
+.verticalgrid {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .verticalgrid img {
+    margin: 10px;
+    height: 100%; }
+  .verticalgrid a {
+    color: #33ccff;
+    text-decoration: none; }
+    .verticalgrid a:hover, .verticalgrid a:visited, .verticalgrid a:link, .verticalgrid a:active {
+      color: #33ccff;
+      text-decoration: none;
+      cursor: pointer; }
+  .verticalgrid h1 {
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 10px;
+    margin: 0px; }
+  .verticalgrid h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px; }
+  .verticalgrid p {
+    margin: 5px;
+    padding: 10px;
+    font-size: .85em; }
+  .verticalgrid .links a {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 1.5em;
+    margin: 0 10px; }
+    .verticalgrid .links a:hover {
+      background-color: #3D95CE;
+      color: white; }
+    
+.img-circular {
+  border-radius: 50%; 
+}
+
+.img-rounded {
+  border-radius: 5px;
+}
+
+.dark {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: white !important;
+  background-color: #1d1f21 !important;
+}
+
+.blue {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: white !important;
+  background-color: #43c7f2;
+}
+
+@media screen and (max-width: 891px) {
+  .pure-u-1 {
+      margin-right: 15px;
+      margin-left: 15px;
+  }
+
+@media screen and (max-width: 769px) {
+  .pure-u-1 img {
+      max-width: 50%;
+  }
+}

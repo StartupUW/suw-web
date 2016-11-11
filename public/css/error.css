@@ -1,0 +1,10 @@
+#footerimagecontent {
+  width: 100%;
+  min-height: 600px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+  text-align: center;}
+
+#splash {
+   min-height: 200px;
+}

@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 #splash {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/default.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/header/default.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 70px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     #splash #links a {
       color: white; } }
   #splash #splash-title {
@@ -12,9 +12,9 @@
     #splash #splash-title .title {
       color: white; }
       #splash #splash-title .title h1 {
-        margin-top: 150px;
+        margin-top: 100px;
         font-size: 1.75em; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
           #splash #splash-title .title h1 {
             margin-top: 120px; } }
     #splash #splash-title .subtitle {
@@ -35,8 +35,8 @@
   margin: 8px 0px;
   box-sizing: border-box; }
 
-#join p {
-  font-size: 1.25em; }
+#footerimage p {
+  font-size: 1.0em !important; }
 
 #join div.input {
   padding: .5em; }
@@ -49,3 +49,59 @@
   padding: 12px 20px;
   margin: 8px 0px;
   box-sizing: border-box; }
+
+  .horiz-center h2 {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px; }
+
+  .horiz-center p {
+    margin: 5px;
+    padding: 10px;
+    font-size: .85em !important; }
+
+  .no-top-margin p {
+    margin-top: 0px;
+  }
+
+  .no-bottom-margin p {
+    margin-bottom: 0px;
+  }
+
+  .smalltext {
+    font-size: .75em;
+  }
+
+  .team {
+    padding-bottom: 20px;
+  }
+
+  .img-circular {
+  border-radius: 50%;
+  min-width: 190px;
+  min-height: 190px; }
+
+  #calendar {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+.becomeamember {
+  position: relative;
+  top: 90px;
+}
+
+.becomeamember h1 {
+  color : white;
+}
+
+#footerimage > .horiz-center {
+  position: relative;
+  top: 20%;
+}
+
+section {
+  max-width: 1250px;
+}

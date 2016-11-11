@@ -5,6 +5,7 @@ html
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css")
     link(rel="shortcut icon" href="/img/logo.png")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
     != CDN('/css/base.css')
 
@@ -26,27 +27,36 @@ html
     #splash
       #header
         a#logo(href="/")
-          != CDN('/img/logo.png')
+          != CDN('/img/logo/logo.png')
           p STARTUP UW
 
         ul#links
           li: a(href="/") HOME
+          li |
           li: a(href="/join") JOIN
+          li |
           li: a(href="/events") EVENTS
+          li |
+          li: a(href="/calendar") CALENDAR
+          li |
           li: a(href="/team") TEAM
-          li: a(target="_blank" href="#{LAUNCH_URL}") LAUNCH
-
-      #splash-title
-        block splash
+          li |
+          li: a(href="http://tigerlaunch.com/") TIGERLAUNCH
+          //li: a(target="_blank" href="#{LAUNCH_URL}") LAUNCH
+      #splash-imageoverlay
+        #splash-title
+          block splash
 
     #content
       block content
-
+    #footerimage
+      block footerimagecontent
     #footer
       #social
         a(target="_blank" href="https://www.facebook.com/StartupUW/"): i.fa.fa-facebook-square
         a(target="_blank" href="https://twitter.com/startupuw"): i.fa.fa-twitter-square
-        a(target="_blank" href="https://instagram.com/startupuw/"): i.fa.fa-instagram
         a(target="_blank" href="mailto:startup@uw.edu"): i.fa.fa-envelope-square
-        a(target="_blank" href="#{BLOG_URL}"): i.fa.fa-pencil-square
         a(target="_blank" href="#{LAUNCH_URL}"): i.fa.fa-rocket
+        br
+    #footersponsor
+      p Sponsored by the <a href="http://foster.uw.edu/">Foster School of Business</a> and the <a href="http://foster.uw.edu/centers/buerk-ctr-entrepreneurship/">Buerk Center for Entrepreneurship</a>.

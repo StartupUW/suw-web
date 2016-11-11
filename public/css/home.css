@@ -1,23 +1,91 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
+
+#splash {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/header/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 70px;
+  position: relative;
+ }
+
+  @media screen and (max-width: 1400px) {
+    #splash {
+      min-height: 450px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    #splash {
+      min-height: 350px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #splash {
+      min-height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    #splash #links a {
+      color: white; } }
+  #splash #splash-title {
+    margin-top: 0px; }
+    #splash #splash-title .title {
+      color: white; }
+      #splash #splash-title .title h1 {
+        margin-top: 150px;
+        font-size: 1.75em; }
+        @media screen and (max-width: 1000px) {
+          #splash #splash-title .title h1 {
+            margin-top: 120px; } }
+    #splash #splash-title .subtitle {
+      color: white; }
+
+#splash-imageoverlay {
+  background-image: url("/img/logo/rocket_inverted.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 100%;
+  min-height: 90%;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+}
+
 .events {
-  width: 100%;
-  max-width: 500px;
-  display: inline-block; }
-  .events h2 {
-    margin-bottom: 40px; }
-  .events .event {
-    border-left: 7px solid #33ccff;
-    padding: 0 30px;
-    margin-bottom: 35px; }
-    .events .event .location, .events .event .at, .events .event .name {
-      margin-bottom: 10px; }
-    .events .event .name {
-      margin-top: 0;
-      font-size: 1.1em;
-      font-weight: 600;
-      display: block; }
-    .events .event .fa {
-      margin-right: 7px; }
+  min-height: 320px;
+  padding: 30px;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .events.image {
+    min-height: 500px;
+  }
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+.pure-u-1 {
+  margin: 20px;
+  background-color: white;
+  color: black;
+}
+
+#about {
+  padding: 30px 0px 0px 0px;
+  min-height: 180px;
+}
+
+#about p {
+  margin: 30px auto 0px auto;
+}
 
 #mission img {
   margin-top: 35px; }
@@ -27,3 +95,89 @@
   @media screen and (max-width: 768px) {
     #launch-overview p, #launch-overview .button {
       text-align: center; } }
+
+
+.event {
+  background-color: #fff;
+  width: 98%;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.event .title {
+  display: inline-block;
+  position: relative;
+  top: 5%;
+  left: 10%;
+  font-weight: 2000;
+  font-size: 10em;
+  color: white;
+  margin: auto;
+}
+
+.image-Tigerlaunch {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/img/home/barktank.jpg");
+}
+
+.image-home1 {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/img/home/home1.jpg");
+}
+
+.image-home2 {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/img/home/home2.jpg");
+}
+
+
+.interested {
+  z-index: 9999;
+  position: relative;
+}
+
+.verticalgrid p {
+  font-size: 1.25em;
+}
+
+.sectionTitle p {
+  font-family: 'Anton', sans-serif;
+  font-size: 2em;
+}
+
+.events .container {
+  margin-top: 4%;
+}
+
+  @media screen and (max-width: 908px) {
+      .container {
+        width: 100%;
+      }
+
+      .events .container {
+        margin-top: 9%;
+      }
+  }
+
+  @media screen and (max-width: 1400px) {
+      .pure-u-md-1-6, .pure-u-md-4-24 {
+        width: 33%;
+      }
+  }
+
+    @media screen and (max-width: 770px) {
+      .pure-u-md-1-6, .pure-u-md-4-24 {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+      }
+  }
+
+.verticalgrid img {
+  margin: 50px;
+}

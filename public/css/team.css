@@ -1,22 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 #splash {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/team2k16.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/header/team.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 140px; }
-  @media screen and (max-width: 768px) {
+  background-position: center 70px; }
+  @media screen and (max-width: 1000px) {
     #splash #links a {
       color: white; } }
   #splash #splash-title {
-    margin-top: 0px; }
+    margin-top: 10px; }
     #splash #splash-title .title {
       color: white; }
       #splash #splash-title .title h1 {
-        margin-top: 150px;
+        margin-top: 65px;
         font-size: 1.75em; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
           #splash #splash-title .title h1 {
-            margin-top: 120px; } }
+            margin-top: 50px; } }
     #splash #splash-title .subtitle {
       color: white; }
 
@@ -75,13 +75,14 @@
     font-size: 1.5em;
     margin: 0 10px; }
     .team .links a:hover {
-      color: #33ccff; }
-
+      background-color: #3D95CE;
+      color: white; }
+    
 .img-rounded {
   border-radius: 5px; }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   height: auto;
   margin: 0 auto;
   padding: 10px;
@@ -109,3 +110,13 @@
     font-weight: 600;
     font-size: 1.25em;
     color: #333; }
+
+#joinus {
+    position: relative;
+    top: 20%;
+    padding-top: 0px;
+    }
+
+#joinus h3 {
+    margin-top: 0px;
+}

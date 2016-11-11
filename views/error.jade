@@ -1,8 +1,12 @@
 extends layout
 
-block splash
-  .title
-    h1 We're Sorry!
+block css
+  != CDN('/css/error.css')
 
-  .subtitle
-    p= message
+block footerimagecontent
+  .horiz-center
+    .title
+      h1 :(
+
+    .subtitle
+      p Something went wrong.<br/> Either this page does not exist or an error prevented us from showing it to you.
