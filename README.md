@@ -3,7 +3,7 @@ Startup UW Website Redesign
 
 ## Overview
 
-This is the repository for the new SUW Website. Planning on launch by Winter 2016.
+This is the repository for the SUW Website. This branch is 2016-fall. CSS has been updated, and those updates will move to .sass in the RC2 release.
 
 Important links:
 - [Infrastructure documentation](https://docs.google.com/spreadsheets/d/12cQx4J6iozWVqrAVz26X6F8Jufq96ee4j4ZJ1NCNpMo)
@@ -12,7 +12,7 @@ Important links:
 
 ### Deadlines
 
-We're going to use Github issues to track deadlines, issues, and releases. When you finish your component(s), mark the issue as closed and post the commit SHA as a comment (link it preferrably).
+We use Github issues to track deadlines, issues, and releases. When you finish your component(s), mark the issue as closed and post the commit SHA as a comment (link it preferrably).
 
 ### Architecture
 
