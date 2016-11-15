@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "gulp sass; node ./bin/www",
+    "start": "node ./bin/www",
     "test": "python scripts/test/populate_db.py; mocha -t 5s"
   },
   "dependencies": {
