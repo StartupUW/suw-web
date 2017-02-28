@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 #splash {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/header/home-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/header/about.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 70px; }
@@ -12,7 +12,7 @@
     #splash #splash-title .title {
       color: white; }
       #splash #splash-title .title h1 {
-        margin-top: 150px;
+        margin-top: 120px;
         font-size: 1.75em; }
         @media screen and (max-width: 1000px) {
           #splash #splash-title .title h1 {
